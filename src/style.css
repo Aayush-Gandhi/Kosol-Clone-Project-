@@ -1,0 +1,24 @@
+body{
+     padding-left: 10px;
+     padding-right: 10px;
+          
+}
+.home{
+     background-image: url("../public/Images/Home.png");
+     background-size: cover;
+}
+
+.map{
+     background-image: url("../public/Images/Mapbg.png");
+     background-size: cover;
+}
+
+.solarbg{
+     background-image:linear-gradient(to right, rgba(0, 0, 0, 0.747) , rgba(255, 255, 255, 0)),url("../public/Images/Solarbg.png");
+     background-size: cover;
+}
+
+.contactus_intro{
+     background-image: url("../public/Images/Contactus/Intro.png");
+     background-size: cover;
+}
