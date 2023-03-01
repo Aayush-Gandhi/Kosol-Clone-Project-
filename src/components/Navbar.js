@@ -18,7 +18,7 @@ export default function Navbar() {
 
      return (
           <div>
-               <div className='bg-[black]/[.89] border-transparent flex py-1 justify-between'>
+               <div className='bg-[#181818] border-transparent flex py-1 justify-between items-center'>
                     <div className="flex text-white ml-[8%]">
                          <p className=''>
                               <IoCallSharp />
@@ -29,9 +29,9 @@ export default function Navbar() {
                          <p className='ml-5 pt-1'>
                               <MdOutlineMail />
                          </p>
-                         <p className='ml-3 text-xs'>
+                         <a href='' className='ml-3 text-xs'>
                               info@sunray.co.in
-                         </p>
+                         </a>
                     </div>
                     <div className='hidden md:text-white md:flex md:space-x-8 md:mr-[8%]'>
                          <ImFacebook />
