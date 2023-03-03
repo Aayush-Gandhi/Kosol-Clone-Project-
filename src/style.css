@@ -19,6 +19,25 @@ body{
 }
 
 .contactus_intro{
+     background-image: url("../public/Images/Aboutus/Intro.png");
+     background-size: cover;
+}
+
+.mission{
+     background-image: url("../public/Images/Aboutus/Mission.png");
+     background-size: cover;
+}
+
+.teamleader:hover{
+     background-image:linear-gradient(180deg, rgba(0, 0, 0, 0.747) , rgba(60, 13, 170, 0));
+     /* opacity: 60%; */
+}
+
+.scale-boxes :nth-last-of-type(1) {
+     background-color: aqua;
+}
+
+.Contactus{
      background-image: url("../public/Images/Contactus/Intro.png");
      background-size: cover;
 }

@@ -1,11 +1,12 @@
 import React from 'react'
-import { Footer, Intro, Navbar } from '../components'
+import { ContactForm, ContactIntro, Footer, Navbar } from '../components'
 
 export default function Contactus() {
   return (
     <div>
         <Navbar />
-
+        <ContactIntro />
+        <ContactForm />
         <Footer />
     </div>
   )

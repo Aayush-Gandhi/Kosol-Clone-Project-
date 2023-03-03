@@ -1,7 +1,7 @@
 import React from 'react'
 import Slider from "react-slick";
 
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 
@@ -54,14 +54,14 @@ export default function ProductRange() {
                               since the 1500s, </p>
                     </div>
                </div>
-               
 
-                              {/* grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 mt-10 */}
-               
-               
+
+               {/* grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 mt-10 */}
+
+
                <div>
-                         <div className='relative'>
-                    <Slider {...settings}>
+                    <div className='relative'>
+                         <Slider {...settings}>
                               {
                                    productrange.map((data) => {
                                         return (
@@ -80,8 +80,8 @@ export default function ProductRange() {
                                         )
                                    })
                               }
-                    </Slider>
-                         </div>
+                         </Slider>
+                    </div>
                </div>
 
 

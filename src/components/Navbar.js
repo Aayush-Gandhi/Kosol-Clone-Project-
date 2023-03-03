@@ -7,7 +7,7 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 import { Navigate, useNavigate } from 'react-router-dom'
 
 
-export default function Navbar() {
+export default function Navbar(props) {
      const Navigate = useNavigate()
 
      const [open, setOpen] = useState(true)
@@ -64,13 +64,13 @@ export default function Navbar() {
                               :
                               <div className='bg-black text-[white]/[.80] w-[80%] mt-10 border-2 border-white flex flex-col items-center absolute'>
                          <ul className=' pb-8 space-y-4 text-xl'>
-                              <li><a href=""> Home </a></li>
-                              <li><a href=""> Company </a></li>
-                              <li><a href=""> Solar Solutions </a></li>
-                              <li><a href=""> Media </a></li>
-                              <li><a href=""> Careers </a></li>
-                              <li><a href=""> Blog </a></li>
-                              <li><a href=""> Case Study </a></li>
+                              <li><a href="" onClick={() => Navigate ('/')}> Home </a></li>
+                              <li><a href="" onClick={() => Navigate ('/Aboutus')}> Company </a></li>
+                              <li><a href="" onClick={() => Navigate ('/Productinner')}> Solar Solutions </a></li>
+                              <li><a href="" onClick={() => Navigate ('/Media')}> Media </a></li>
+                              <li><a href="" onClick={() => Navigate ('/Careers')}> Careers </a></li>
+                              <li><a href="" onClick={() => Navigate ('/Blog')}> Blog </a></li>
+                              <li><a href="" onClick={() => Navigate ('/Casestudy')}> Case Study </a></li>
                               <button className='border-2 rounded-md px-8 py-2 border-blue-400 text-blue-400'> Contact us </button>
                          </ul>
                     </div>
