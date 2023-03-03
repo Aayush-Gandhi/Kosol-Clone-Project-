@@ -1,36 +1,55 @@
 import React from 'react'
+import { IoCall, IoLocationSharp, IoMailSharp } from 'react-icons/io5'
 
 export default function Form({ data, selectedIndex }) {
 
     return (
-        selectedIndex === data.id && <div className='absolute mt-10 flex w-[100%]'>
+        selectedIndex === data.id &&
+        <div className='absolute mt-20 flex w-[100%]'>
             <div className='w-[50%]'>
                 <form action="">
                     <p className='text-white font-semibold text-2xl'>{data.tname}</p>
                     <p className='text-white text-lg font-medium'>Trust of our customersis our first priority.</p>
 
-                    <div className="grid grid-cols-2 ">
-                       
-                            <input type="text" placeholder='Your Name' className='bg-transparent  underline' />
-                            <input type="email" placeholder='Your Email Address'  className='bg-transparent' />
-                        
-                            <input type="text" placeholder='Your Phone Number'  className='bg-transparent' />
-                            <input type="text" placeholder='Company'  className='bg-transparent' />
-                       
-                            <input type="text" placeholder='Comment'  className='bg-transparent' />
-                       
-                            <input type="button" value="Submit"  className='bg-transparent' />
-                       
+                    <div className="grid grid-cols-2 w-[95%] gap-5 mt-5">
+                        <div>
+                            <input type="text" placeholder='Your Name' className='border-b-2 bg-transparent px-1 w-full lg:px-3 py-2 font-medium' />
+                        </div>
+                        <div>
+                            <input type="text" placeholder='Your Email Address' className='border-b-2 bg-transparent px-1 w-full lg:px-3 py-2 font-medium' />
+                        </div>
+                        <div>
+                            <input type="text" placeholder='Your Phone Number' className='border-b-2 bg-transparent px-1 w-full lg:px-3 py-2 font-medium' />
+                        </div>
+                        <div>
+                            <input type="text" placeholder='Company' className='border-b-2 bg-transparent px-1 lg:px-3 py-2 w-full font-medium' />
+                        </div>
+                        <div className='col-span-2'>
+                            <input type="text" placeholder='Comments' className='border-b-2 bg-transparent px-1 w-full lg:px-3 py-2 font-medium' />
+                        </div>
+                        <div>
+                            <input type="button" value="Submit" className='bg-[#00ACEF] rounded text-white px-5 py-1' />
+                        </div>
                     </div>
                 </form>
             </div>
             <div>
-                <div className='bg-[#272727] text-white'>
-                    <p>Survey No 415, Opp. Super Gas, Village: Bhayla. Tal: Bavla Gujarat, INDIA.</p>
-                    <p>Plot No. 127, Jamwadi, G.I.D.C-II,NH 8-B, Gondal,Dist: Rajkot Gujarat INDIA.</p>
-                    <p>+91 79268 61339</p>
-                    <p>info@sunray.co.in</p>
-                    <p>info@kosol.solar</p>
+                <div className='bg-[#272727] text-white p-5 h-72'>
+                    <div>
+                        <div className='flex items-center text-[#00ACEF] gap-5'>
+                            <IoLocationSharp /> <p className='text-white w-[60%]'>  Survey No 415, Opp. Super Gas, Village: Bhayla. Tal: Bavla Gujarat, INDIA.</p>
+                        </div>
+                        <p className='w-[60%] pl-10'>Plot No. 127, Jamwadi, G.I.D.C-II,NH 8-B, Gondal,Dist: Rajkot Gujarat INDIA.</p>
+                    </div>
+                    <div className='flex items-center text-[#00ACEF]'>
+                        <IoCall /><p className='text-white'> +91 79268 61339</p>
+                    </div>
+                    <div>
+                        <div className="flex items-center text-[#00ACEF]">
+                            <IoMailSharp />  <p className='text-white'>info@sunray.co.in</p>
+                        </div>
+                        <p>info@kosol.solar</p>
+                    </div>
                 </div>
             </div>
         </div>
