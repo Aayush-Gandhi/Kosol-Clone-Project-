@@ -1,5 +1,5 @@
 import React from 'react'
-import { Footer, Navbar, ProductIntro, SolarDryer } from '../components'
+import { Application, Footer, KasolCasestudy, Navbar, ProductIntro, ProductRange, SolarDryer, TechSpeci } from '../components'
 
 export default function Productinner() {
   return (
@@ -7,6 +7,10 @@ export default function Productinner() {
         <Navbar />
         <ProductIntro />
         <SolarDryer />
+        <TechSpeci />
+        <Application />
+        <ProductRange />
+        <KasolCasestudy />
         <Footer />
     </div>
   )

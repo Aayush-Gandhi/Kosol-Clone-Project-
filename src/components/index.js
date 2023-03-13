@@ -24,3 +24,5 @@ export {default as Form} from './ContactUs/Form'
 
 export {default as ProductIntro} from './ProductInner/Intro'
 export {default as SolarDryer} from './ProductInner/SolarDryer'
+export {default as TechSpeci} from './ProductInner/TechSpeci'
+export {default as Application} from './ProductInner/Application'

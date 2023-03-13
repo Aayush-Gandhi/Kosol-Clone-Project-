@@ -46,6 +46,7 @@ export default function Clients() {
                          <button className='border-2 rounded-md px-8 py-2  border-[#00ACEF] text-[#00ACEF] hover:bg-[#00ACEF] hover:text-white'> View all Clients </button>
                     </div>
                </div>
+               
                <div className="grid grid-cols-2 lg:grid-cols-5 gap-[50px] mt-5 pb-20">
 
                     {
@@ -60,7 +61,7 @@ export default function Clients() {
                          }
                          )
                     }
-               </div>
+               </div>    
           </div>
      )
 }
