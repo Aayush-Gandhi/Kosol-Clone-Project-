@@ -39,16 +39,16 @@ export default function Form({ data, selectedIndex }) {
                         <div className='flex items-center text-[#00ACEF] gap-5'>
                             <IoLocationSharp /> <p className='text-white w-[60%]'>  Survey No 415, Opp. Super Gas, Village: Bhayla. Tal: Bavla Gujarat, INDIA.</p>
                         </div>
-                        <p className='w-[60%] pl-10'>Plot No. 127, Jamwadi, G.I.D.C-II,NH 8-B, Gondal,Dist: Rajkot Gujarat INDIA.</p>
+                        <p className='w-[60%] pl-9 mt-3'>Plot No. 127, Jamwadi, G.I.D.C-II,NH 8-B, Gondal,Dist: Rajkot Gujarat INDIA.</p>
                     </div>
                     <div className='flex items-center text-[#00ACEF]'>
-                        <IoCall /><p className='text-white'> +91 79268 61339</p>
+                        <IoCall className='mt-10'/><p className='text-white mt-10 pl-5'> +91 79268 61339</p>
                     </div>
                     <div>
                         <div className="flex items-center text-[#00ACEF]">
-                            <IoMailSharp />  <p className='text-white'>info@sunray.co.in</p>
+                            <IoMailSharp className='mt-10'/>  <p className='text-white mt-10 pl-5'>info@sunray.co.in</p>
                         </div>
-                        <p>info@kosol.solar</p>
+                        <p className='pl-9'>info@kosol.solar</p>
                     </div>
                 </div>
             </div>

@@ -21,3 +21,6 @@ export {default as Logo} from './Company/Logo'
 export {default as ContactIntro} from './ContactUs/ContactIntro'
 export {default as ContactForm} from './ContactUs/ContactForm'
 export {default as Form} from './ContactUs/Form'
+
+export {default as ProductIntro} from './ProductInner/Intro'
+export {default as SolarDryer} from './ProductInner/SolarDryer'

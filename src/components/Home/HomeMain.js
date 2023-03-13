@@ -14,7 +14,7 @@ export default function HomeMain() {
                               <Breadcrumbs />
                          </div>
                          <div className='flex flex-col items-end text-white space-y-2'>
-                              <button className='bg-black px-2 py-2 gap-2 items-center rounded text-xl flex hover:-translate-x-3'><IoCalculatorOutline /> Solar Calculator </button>
+                              <button className='bg-black px-2 py-2 gap-2 items-center rounded  text-xl flex hover:-translate-x-3'><IoCalculatorOutline /> Solar Calculator </button>
                               <button className='bg-black px-3 py-2 rounded w-fit hover:-translate-x-3'> <IoLogoWhatsapp /> </button>
                               <button className='bg-black px-3 py-2 rounded w-fit hover:-translate-x-3'> <IoCallSharp /> </button>
                          </div>
