@@ -1,5 +1,5 @@
 import React from 'react'
-import { ContactForm, ContactIntro, Footer, Navbar } from '../components'
+import { ContactForm, ContactIntro, Footer, LocationMap, Navbar } from '../components'
 
 export default function Contactus() {
   return (
@@ -7,6 +7,7 @@ export default function Contactus() {
         <Navbar />
         <ContactIntro />
         <ContactForm />
+        <LocationMap />
         <Footer />
     </div>
   )
