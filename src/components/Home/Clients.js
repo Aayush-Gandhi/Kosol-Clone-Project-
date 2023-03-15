@@ -53,7 +53,7 @@ export default function Clients() {
                          client.map((data) => {
                               return (
                                    <div>
-                                        <button className='bg-white p-2 grayscale hover:grayscale-0 hover:scale-75 hover:border-4 border-[#00ACEF] px-10 rounded-md'>
+                                        <button className='bg-white p-2 grayscale hover:grayscale-0 border-4 border-transparent hover:scale-110 hover:border-4 hover:border-[#00ACEF] px-10 rounded-md'>
                                              <img src={data.img} className='h-24 w-36' alt="" /> 
                                         </button>
                                    </div>

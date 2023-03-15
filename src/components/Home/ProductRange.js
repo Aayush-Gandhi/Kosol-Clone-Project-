@@ -19,7 +19,7 @@ export default function ProductRange() {
                info: 'Lorem Ipsum is simply dummy typesetting industry. '
           },
           {
-               primg: '/Images/Product3.png',
+               primg: '/Images/Product4.png',
                title: 'Solar Water Heater ETC Domestic',
                info: 'Lorem Ipsum is simply dummy typesetting industry. '
           }
@@ -45,7 +45,7 @@ export default function ProductRange() {
                                         <div className=''>
                                              <img src={data.primg} alt="" srcset="" /></div>
                                         <div className='bg-white rounded-b-xl px-5'>
-                                             <p className='text-[#00ACEF] font-bold pt-5'>{data.title}</p>
+                                             <p className='text-[#00ACEF] font-bold pt-5 text-ellipsis overflow-hidden whitespace-nowrap'>  {data.title}</p>
                                              <p className='text-lg font-medium text-black/[.80] mt-5 pb-5'>{data.info}</p>
                                              <div className='flex items-end pb-[5%]'>
 

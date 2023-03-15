@@ -35,7 +35,6 @@ export default function Scale({ data, idx, lastIdx }) {
                </div>
                {isHovering &&
                     <div
-
                          className={`mt-5 absolute bg-[#252525] p-4 w-[300px] rounded ${lastIdx - idx < 1 ? "-left-[200%]" : ""}`} >
                          <p className='font-semibold text-2xl'>{data.title}</p>
                          <p className='text-lg mt-5'>{data.info}</p>

@@ -1,5 +1,11 @@
 export {default as Navbar} from './Navbar'
 export {default as Breadcrumbs} from './Breadcrumbs'
+export {default as Footer} from './Footer'
+export {default as SysDate} from './SysDate'
+export {default as Scale} from './Scale'
+export {default as ViewPDF} from './ViewPDF'
+export {default as DownloadPDF} from './DownloadPDF'
+
 export {default as HomeMain} from './Home/HomeMain'
 export {default as Aboutus} from './Home/Aboutus'
 export {default as ProductRange} from './Home/ProductRange'
@@ -8,13 +14,11 @@ export {default as Map} from './Home/Map'
 export {default as KasolCasestudy} from './Home/KasolCasestudy'
 export {default as EnergySystem} from './Home/EnergySystem'
 export {default as Clients} from './Home/Clients'
-export {default as Footer} from './Footer'
 
 export {default as Intro} from './Company/Intro'
-export {default as SysDate} from './SysDate'
 export {default as Mission} from './Company/Mission'
 export {default as TeamLeader} from './Company/TeamLeader'
-export {default as Scale} from './Scale'
+export {default as Experience} from './Company/Experience'
 export {default as ManufacturingUnit} from './Company/ManufacturingUnit'
 export {default as Logo} from './Company/Logo'
 
@@ -30,4 +34,10 @@ export {default as Application} from './ProductInner/Application'
 
 export {default as MediaIntro} from './Media/MediaIntro'
 export {default as PhotoGallery} from './Media/PhotoGallery'
+export {default as LatestSolutions} from './Media/LatestSolutions'
+export {default as Videos} from './Media/Videos'
+export {default as Downloads} from './Media/Downloads'
+
+export {default as CareersIntro} from './Careers/CareersIntro'
+export {default as LifeAtKasol} from './Careers/LifeAtKasol'
 

@@ -1,9 +1,7 @@
 import React from 'react'
 import Slider from "react-slick";
-import { useState } from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Scale from '../Scale';
 
 export default function TeamLeader() {
 
@@ -35,54 +33,11 @@ export default function TeamLeader() {
           }
      ]
 
-     const yearbtn = [
-          {
-               year: '1960',
-               title: 'Market Hit',
-               info: 'Solar Water Heater (SWH) under the brand name SunRay, our first product, hit the market with support of CREDA and later with MNRE in 80s and 90s.'
-          },
-          {
-               year: '1970',
-               title: 'Market Hit',
-               info: 'Solar Water Heater (SWH) under the brand name SunRay, our first product, hit the market with support of CREDA and later with MNRE in 80s and 90s.'
-          },
-          {
-               year: '1980',
-               title: 'Market Hit',
-               info: 'Solar Water Heater (SWH) under the brand name SunRay, our first product, hit the market with support of CREDA and later with MNRE in 80s and 90s.'
-          },
-          {
-               year: '1990',
-               title: 'Market Hit',
-               info: 'Solar Water Heater (SWH) under the brand name SunRay, our first product, hit the market with support of CREDA and later with MNRE in 80s and 90s.'
-          },
-          {
-               year: '2000',
-               title: 'Market Hit',
-               info: 'Solar Water Heater (SWH) under the brand name SunRay, our first product, hit the market with support of CREDA and later with MNRE in 80s and 90s.'
-          },
-          {
-               year: '2010',
-               title: 'Market Hit',
-               info: 'Solar Water Heater (SWH) under the brand name SunRay, our first product, hit the market with support of CREDA and later with MNRE in 80s and 90s.'
-          },
-          {
-               year: '2020',
-               title: 'Market Hit',
-               info: 'Solar Water Heater (SWH) under the brand name SunRay, our first product, hit the market with support of CREDA and later with MNRE in 80s and 90s.'
-          },
-          {
-               year: '2021',
-               title: 'Market Hit',
-               info: 'Solar Water Heater (SWH) under the brand name SunRay, our first product, hit the market with support of CREDA and later with MNRE in 80s and 90s.'
-          }
-
-     ]
-
+     
 
 
      return (
-          <div className='bg-black/[.89] pb-48'>
+          <div className='bg-black/[.89] pb-20'>
                <div className="flex pt-20 mb-10 px-[8%]">
                     <div className='w-1/2'>
                          <p className='text-[#00ACEF] text-2xl font-semibold'>Kasol Energie</p>
@@ -119,21 +74,7 @@ export default function TeamLeader() {
                     </div>
                </div>
 
-               <div className='py-20 relative'>
-                    <div className='border absolute w-full z-1 border-slate-200 top-[43%]'>
-                    </div>
-                    <div className='flex text-white justify-evenly z-10 relative text-2xl '>
-                         {
-                              yearbtn.map((data, idx) => {
-                                   return (
-
-                                       <Scale data={data} idx={idx} lastIdx={yearbtn.length-1}/>
-
-                                   )
-                              })
-                         }
-                    </div>
-               </div>
+              
 
           </div>
      )

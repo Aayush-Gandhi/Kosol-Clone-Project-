@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Footer, Intro, Logo, ManufacturingUnit, Map, Navbar, TeamLeader } from '../components'
+import { Experience, Footer, Intro, Logo, ManufacturingUnit, Map, Navbar, TeamLeader } from '../components'
 import Mission from '../components/Company/Mission'
 import Technology from '../components/Company/Technology'
 
@@ -11,6 +11,7 @@ export default function Aboutus() {
       <Technology />
       <Mission />
       <TeamLeader />
+      <Experience />
       <Map />
       <ManufacturingUnit />
       <Logo />
