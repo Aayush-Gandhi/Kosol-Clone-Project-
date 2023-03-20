@@ -30,7 +30,7 @@ export default function Navbar(props) {
                               <MdOutlineMail />
                          </p>
                          <a href='' className='ml-3 text-xs'>
-                              info@sunray.co.in
+                              info@kasolray.co.in
                          </a>
                     </div>
                     <div className='hidden md:text-white md:flex md:space-x-8 md:mr-[8%]'>
@@ -42,14 +42,14 @@ export default function Navbar(props) {
                     </div>
                </div>
                <div className="bg-black flex justify-between py-3 px-[8%]">
-                    <div className="w-[6%] ">
+                    <div className="w-[25%] md:w-[15%] lg:w-[15%] xl:w-[10%]">
                          <img src="/Images/logo.png" alt="" className='' />
                     </div>
 
                     {
                          open ?
-                              <div className='text-white/[.80]  items-center hidden lg:block'>
-                                   <ul className='flex  space-x-14 text-xl items-center'>
+                              <div className='text-white/[.80] xl:flex items-center hidden justify-end lg:block lg:w-[80%]'>
+                                   <ul className='flex space-x-10  xl:space-x-14 text-sm xl:text-lg items-center'>
                                         <li><a href="" onClick={() => Navigate ('/')}>Home </a></li>
                                         <li><a href="" onClick={() => Navigate ('/Aboutus')}> Company </a></li>
                                         <li><a href="" onClick={() => Navigate ('/Productinner')}> Solar Solutions </a></li>
@@ -57,8 +57,8 @@ export default function Navbar(props) {
                                         <li><a href="" onClick={() => Navigate ('/Careers')}> Careers </a></li>
                                         <li><a href="" onClick={() => Navigate ('/Blog')}> Blog </a></li>
                                         <li><a href="" onClick={() => Navigate ('/Casestudy')}> Case Study </a></li>
-                                        <button className='border-2 rounded-md px-8 py-2 border-[#00ACEF] text-[#00ACEF] hover:bg-[#00ACEF] hover:text-white' 
-                                        onClick={() => Navigate ('/Contactus')}> Contact us </button>
+                                        <button className='border-2 rounded-md px-4 py-2 border-[#00ACEF] text-[#00ACEF] hover:bg-[#00ACEF] hover:text-white' 
+                                        onClick={() => Navigate ('/Contactus')}> Contactus </button>
                                    </ul>
                               </div>
                               :

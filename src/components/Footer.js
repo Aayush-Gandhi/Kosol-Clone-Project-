@@ -5,19 +5,19 @@ import { AiFillInstagram } from 'react-icons/ai'
 export default function Footer() {
      return (
           <div>
-               <div className="flex text-white bg-[black]/[.89] px-[8%] py-20">
-                    <div className='w-1/4'>
+               <div className="lg:flex text-white bg-[black]/[.89] px-[8%] py-10 lg:py-20">
+                    <div className='lg:w-1/4'>
                          <img src="/Images/Footerlogo.png" className='w-[20%]' alt="" />
-                         <p className='text-white text-lg font-normal w-[80%] mt-3 text-white/[.80]'>If you have any questions or need help, feel free to contact with our team.</p>
+                         <p className='text-white text-sm lg:text-lg font-normal lg:w-[80%] mt-3 text-white/[.80]'>If you have any questions or need help, feel free to contact with our team.</p>
                          <div className="flex mt-5 gap-5">
                               <img src="/Images/logo.png" className='w-[25%]' alt="" />
-                              <img src="/Images/SunRay.png" className='w-[25%]' alt="" />
+                              <img src="/Images/kasolRay.png" className='w-[25%]' alt="" />
                          </div>
                     </div>
-                    <div className="flex w-2/4 justify-around">
-                         <div className=''>
-                              <p className='font-semibold text-2xl'>Company</p>
-                              <div className='text-white/[.80] mt-5 space-y-3 flex flex-col'>
+                    <div className="flex lg:w-2/4 justify-around sm:mt-10 md:mt-0 lg:mt-0">
+                         <div className='mt-10 lg:mt-0 '>
+                              <p className='font-semibold text-base  lg:text-2xl'>Company</p>
+                              <div className='text-white/[.80] text-sm mt-5  space-y-3 flex flex-col'>
                                    <a href=''>About us</a>
                                    <a href=''>Leadership Team</a>
                                    <a href=''>News & Media</a>
@@ -26,8 +26,8 @@ export default function Footer() {
                               </div>
                          </div>
                          <div>
-                              <p className='font-semibold text-2xl'>Service</p>
-                              <div className='text-white/[.80] mt-5 space-y-3 flex flex-col'>
+                              <p className='font-semibold mt-10 lg:mt-0 text-base lg:text-2xl'>Service</p>
+                              <div className='text-white/[.80] mt-5 text-sm space-y-3 flex flex-col'>
                                    <a href=''>Wind Turbines</a>
                                    <a href=''>Solar Panels</a>
                                    <a href=''>Hydropower Plants</a>
@@ -37,15 +37,15 @@ export default function Footer() {
                               </div>
                          </div>
                     </div>
-                    <div className='w-1/4'>
-                         <p className='font-semibold text-2xl'>Product Catelogue</p>
+                    <div className='lg:w-1/4'>
+                         <p className='font-semibold text-2xl mt-10 lg:mt-0'>Product Catelogue</p>
                          <div className="flex gap-5 mt-5">
                               <div>
-                                   <img src="/Images/Footerimg1.png" className='h-20 w-20' alt="" />
+                                   <img src="/Images/Footerimg1.png" className='h-24 lg:h-20 w-24 lg:w-20' alt="" />
                                    <p className='mt-3'>Brochure</p>
                               </div>
                               <div>
-                                   <img src="/Images/Footerimg2.png" className='h-20 w-20' alt="" />
+                                   <img src="/Images/Footerimg2.png" className='h-24 lg:h-20 w-24 lg:w-20' alt="" />
                                    <p className='mt-3'>Catalogue</p>
                               </div>
                          </div>
@@ -59,9 +59,9 @@ export default function Footer() {
                          </div>
                     </div>
                </div>
-               <div className='bg-black/[.80] items-center px-[8%] flex gap-[20%]'>
-                    <p className='text-white/[.80]'>©2021 KOSOL ENERGIE PVT LTD. All Rights Reserved.</p>
-                    <img src="/Images/footerimg.png" className='h-10 ' alt="" />
+               <div className='bg-black/[.80] items-center px-[8%] lg:flex gap-[20%]'>
+                    <p className='text-white/[.80] text-xs'>©2021 KOSOL ENERGIE PVT LTD. All Rights Reserved.</p>
+                    <img src="/Images/footerimg.png" className='h-4 w-36 items-center' alt="" />
                </div>
           </div>
      )

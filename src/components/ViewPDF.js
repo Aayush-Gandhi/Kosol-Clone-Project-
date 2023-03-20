@@ -2,7 +2,7 @@ import React from "react";
 
 function PdfViewer() {
   const openPdf = () => {
-    window.open("/Kasol", "_blank");
+    window.open("/kasol", "_blank");
   };
 
   return (

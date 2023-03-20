@@ -2,8 +2,8 @@ import { saveAs } from 'file-saver';
 import React from 'react';
 
 function handleDownload() {
-  const fileUrl = '/Kasol';
-  const fileName = 'Kasol.pdf';
+  const fileUrl = '/kasol';
+  const fileName = 'kasol';
   saveAs(fileUrl, fileName);
 }
 

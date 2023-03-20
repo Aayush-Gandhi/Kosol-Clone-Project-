@@ -46,7 +46,7 @@ export default function ProductRange() {
           <div className='bg-black/[.90] px-[8%] pt-32 pb-20' >
 
                <div className='text-center w-full'>
-                    <p className='text-2xl font-semibold text-[#00ACEF]'> Kasol Energy </p>
+                    <p className='text-2xl font-semibold text-[#00ACEF]'> kasol Energy </p>
                     <p className='text-4xl font-semibold text-white px-[38%]'> Latest Projects, Solutions and Energy Supplies</p>
                </div>
 

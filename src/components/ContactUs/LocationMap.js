@@ -43,7 +43,7 @@ const MapSearch = () => {
                     onClick={(e) => {
                         const { lng, lat } = e.target._lngLat;
                         e.originalEvent.stopPropagation();
-                        setPopupInfo({ lng, lat, name: "KASOL ENERGIE PVT" });
+                        setPopupInfo({ lng, lat, name: "KOSOL ENERGIE PVT" });
                     }}
                     style={{ cursor: "pointer" }}
                 />

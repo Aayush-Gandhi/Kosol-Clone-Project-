@@ -5,6 +5,7 @@ export {default as SysDate} from './SysDate'
 export {default as Scale} from './Scale'
 export {default as ViewPDF} from './ViewPDF'
 export {default as DownloadPDF} from './DownloadPDF'
+export {default as Pagination} from './Pagination'
 
 export {default as HomeMain} from './Home/HomeMain'
 export {default as Aboutus} from './Home/Aboutus'
@@ -40,4 +41,10 @@ export {default as Downloads} from './Media/Downloads'
 
 export {default as CareersIntro} from './Careers/CareersIntro'
 export {default as LifeAtKasol} from './Careers/LifeAtKasol'
+export {default as OpenPosition} from './Careers/OpenPosition'
+
+export {default as Data1} from './Blogs/Data1'
+export {default as News_Blogs} from './Blogs/News_Blogs'
+
+
 

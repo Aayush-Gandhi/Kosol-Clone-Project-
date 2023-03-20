@@ -40,7 +40,7 @@ export default function Application() {
             info: 'Faster & conProtection from flies, pests, rain, dust & UV rays'
         },
         {
-            info: 'Less risk of spoilage in-case of low sunlight & low ambient temperature'
+            info: 'Less risk of spoilage in-case of low kasollight & low ambient temperature'
         }
     ]
     return (

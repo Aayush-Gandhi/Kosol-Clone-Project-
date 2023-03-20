@@ -31,7 +31,7 @@ export default function ContactForm() {
     return (
         <div className='px-[8%] py-20 bg-black/[.90]'>
             <div className='text-center'>
-                <p className='text-xl font-semibold text-[#00ACEF]'>Kasol Energie</p>
+                <p className='text-xl font-semibold text-[#00ACEF]'>kasol Energie</p>
                 <p className='text-4xl font-semibold text-white mt-5'>Say Hello!</p>
                 <p className='text-lg text-white/[.80] px-[25%] mt-5'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
             </div>
@@ -113,7 +113,7 @@ export default function ContactForm() {
                     <p>Survey No 415, Opp. Super Gas, Village: Bhayla. Tal: Bavla Gujarat, INDIA.</p>
                     <p>Plot No. 127, Jamwadi, G.I.D.C-II,NH 8-B, Gondal,Dist: Rajkot Gujarat INDIA.</p>
                     <p>+91 79268 61339</p>
-                    <p>info@sunray.co.in</p>
+                    <p>info@kasolray.co.in</p>
                     <p>info@kosol.solar</p>
                 </div>
 

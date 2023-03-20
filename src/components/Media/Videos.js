@@ -18,7 +18,7 @@ export default function Videos() {
     return (
         <div className='bg-black/[.90]'>
             <div className='text-center'>
-                <p className='text-xl font-semibold text-[#00ACEF]'>Kasol Energie</p>
+                <p className='text-xl font-semibold text-[#00ACEF]'>kasol Energie</p>
                 <p className='text-4xl font-semibold text-white mt-2'>Videos</p>
                 <p className='text-lg text-white/[.80] px-[25%] mt-3'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
             </div>

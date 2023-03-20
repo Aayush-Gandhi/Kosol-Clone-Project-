@@ -12,9 +12,24 @@ export default function ProductRange() {
           speed: 500,
           slidesToShow: 4,
           slidesToScroll: 1,
-          arrows: false
+          arrows: false,
+          responsive: [
+               {
+                    breakpoint: 767,
+                    settings: {
+                         slidesToShow: 1,
+                         arrows: true,
+                    }
+               },
+               {
+                    breakpoint: 1024,
+                    settings: {
+                         slidesToShow: 2,
+                         arrows: true,
+                    }
+               }
+          ]
      };
-
      const productrange = [
           {
                primg: '/Images/Project1.png',
@@ -32,12 +47,12 @@ export default function ProductRange() {
                info: 'Lorem Ipsum is simply dummy typesetting industry. '
           },
           {
-               primg: '/Images/Project3.png',
+               primg: '/Images/Project4.png',
                title: 'Is Industry.',
                info: 'Lorem Ipsum is simply dummy typesetting industry. '
           },
           {
-               primg: '/Images/Project4.png',
+               primg: '/Images/Project2.png',
                title: 'Solar Water Heater ETC Domestic',
                info: 'Lorem Ipsum is simply dummy typesetting industry. '
           }
@@ -45,13 +60,13 @@ export default function ProductRange() {
      return (
           <div className='bg-black/[.90] px-[8%] pt-32 pb-20' >
                <div className='flex flex-col lg:flex-row justify-between'>
-                    <div className='w-2/3'>
-                         <p className='text-2xl font-semibold text-[#00ACEF]'> Improving The performance of Solar Energy </p>
-                         <p className='text-4xl font-semibold text-white'> Latest Projects, Solutions and Energy Supplies</p>
+                    <div className='lg:w-2/3'>
+                         <p className='text-sm lg:text-xl xl:text-3xl font-semibold text-[#00ACEF]'> Improving The performance of Solar Energy </p>
+                         <p className='text-base lg:text-2xl xl:text-4xl font-semibold text-white'> Latest Projects, Solutions and Energy Supplies</p>
                     </div>
                     <div className=''>
-                         <p className='text-lg font-normal mt-5 lg:mt-0 text-white/[.80]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
-                              since the 1500s, </p>
+                         <p className='text-sm lg:text-base xl:text-xl font-normal mt-5 lg:mt-0 text-white/[.80]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+                         since the 1500s, </p>
                     </div>
                </div>
 
@@ -111,36 +126,39 @@ export default function ProductRange() {
 
 
                <div className='flex flex-col lg:flex-row mt-[6rem]'>
-                    <div className='w-[90%] lg:w-[40%]'>
-                         <p className='text-2xl text-[#00ACEF] font-semibold'>Making Tomorrow a different Today</p>
-                         <p className='text-4xl text-white font-semibold lg:w-[60%]'>Energize Society With Sustainable And Reliable Energy Systems!</p>
-                         <p className='text-lg text-white/[.80]  font-normal lg:w-[80%] mt-5'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever
+                    <div className=' lg:w-1/2'>
+                         <p className='text-sm lg:text-xl text-[#00ACEF] font-semibold'>Making Tomorrow a different Today</p>
+                         <p className='text-base lg:text-3xl  text-white font-semibold lg:w-[75%]'>Energize Society With Sustainable And Reliable Energy Systems!</p>
+                         <p className='text-sm lg:text-base text-justify text-white/[.80]  font-normal lg:w-[80%] mt-5'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever
                               since the 1500s, </p>
-                         <p className='text-lg text-white/[.80] font-normal lg:w-[70%] mt-5'>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                         <p className='text-sm lg:text-lg text-justify text-white/[.80] font-normal lg:w-[70%] mt-5'>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                     </div>
 
 
-                    <div className='flex flex-col space-y-10 mt-10 lg:mt-0'>
-                         <div className='flex space-x-16'>
-                              <div className='bg-[#252525] rounded-lg flex items-center w-80 space-x-2 py-5'>
-                                   <img src="/Images/Energy1.png" className='w-[30%] ml-4' alt="" />
-                                   <p className='text-2xl text-white font-semibold'>Save Your Money</p>
+                    <div className='lg:flex flex-col space-y-10 mt-10 lg:mt-0 lg:w-2/3'>
+                         <div className='lg:flex lg:space-x-16 space-y-10 md:space-y-0'>
+
+                         <div className='bg-[#252525] rounded-lg flex items-center w-[100%] space-x-2 py-5'>
+                                   <img src="/Images/Energy3.png" className='w-[20%] ml-4' alt="" />
+                                   <p className='text-sm lg:text-xl text-white font-semibold'>5 Star Customer Service</p>
                               </div>
-                              <div className='bg-[#252525] rounded-lg flex items-center w-80 space-x-2  py-5'>
-                                   <img src="/Images/Energy3.png" className='w-[30%] ml-4' alt="" />
-                                   <p className='text-2xl text-white font-semibold'>5 Star Customer Service</p>
-                              </div>
-                         </div>
-                         <div className='flex space-x-16'>
-                              <div className='bg-[#252525] rounded-lg flex items-center w-80 space-x-2  py-5'>
-                                   <img src="/Images/Energy2.png" className='w-[30%] ml-4' alt="" />
-                                   <p className='text-2xl text-white font-semibold'>Your Home is Energy</p>
-                              </div>
-                              <div className='bg-[#252525] rounded-lg flex items-center w-80 space-x-2  py-5'>
-                                   <img src="/Images/Energy4.png" className='w-[30%] ml-4' alt="" />
-                                   <p className='text-2xl text-white font-semibold'>Consultation & Planning</p>
+                              <div className='bg-[#252525] rounded-lg flex items-center w-[100%] space-x-2 py-5'>
+                                   <img src="/Images/Energy3.png" className='w-[20%] ml-4' alt="" />
+                                   <p className='text-sm lg:text-xl text-white font-semibold'>5 Star Customer Service</p>
                               </div>
                          </div>
+
+                         <div className='lg:flex lg:space-x-16 space-y-10 md:space-y-0'>
+                              <div className='bg-[#252525] rounded-lg flex items-center w-[100%] space-x-2  py-5'>
+                                   <img src="/Images/Energy2.png" className='w-[20%] ml-4' alt="" />
+                                   <p className='text-sm lg:text-xl text-white font-semibold'>Your Home is Energy</p>
+                              </div>
+                              <div className='bg-[#252525] rounded-lg flex items-center w-[100%] space-x-2  py-5'>
+                                   <img src="/Images/Energy4.png" className='w-[20%] ml-4' alt="" />
+                                   <p className='text-sm lg:text-xl text-white font-semibold'>Consultation & Planning</p>
+                              </div>
+                         </div>
+                         
                     </div>
                </div>
           </div >
