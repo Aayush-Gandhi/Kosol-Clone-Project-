@@ -1,4 +1,5 @@
 import React from 'react'
+import ClientLogo from './ClientLogo'
 
 export default function Clients() {
 
@@ -50,16 +51,20 @@ export default function Clients() {
                <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-5 gap-[50px] mt-5 pb-20">
 
                     {
-                         client.map((data) => {
-                              return (
-                                   <div>
-                                        <button className='bg-white p-2 grayscale hover:grayscale-0 border-4 border-transparent hover:scale-110 hover:border-4 hover:border-[#00ACEF] lg:px-10 rounded-md'>
-                                             <img src={data.img} className='h-24 w-36' alt="" /> 
-                                        </button>
-                                   </div>
-                              )
-                         }
-                         )
+                         // client.map((data) => {
+                         //      return (
+                         //           <div>
+                         //                <button className='bg-white p-2 grayscale hover:grayscale-0 border-4 border-transparent hover:scale-110 hover:border-4 hover:border-[#00ACEF] lg:px-10 rounded-md'>
+                         //                     <div>
+                         //                     <img src={data.img} className='h-24 w-36' alt="" /> 
+                         //                     <img src="" alt="" />
+                         //                     </div>
+                         //                </button>
+                         //           </div>
+                         //      )
+                         // }
+                         // )
+                         client.map(({img}, idx) => <ClientLogo key={idx} img={img} /> )
                     }
                </div>    
           </div>

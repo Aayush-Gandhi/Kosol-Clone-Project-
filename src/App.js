@@ -15,9 +15,9 @@ function App() {
         <Route path='Media' element={(<Media />)} />
         <Route path='Careers' element={(<Careers />)} />
         <Route path='Blog' element={(<Blog />)} />
-        <Route path='Bloginner' element={(<Bloginner />)} />
+        <Route path='/Blog/Bloginner/:id' element={(<Bloginner />)} />
         <Route path='Casestudy' element={(<Casestudy />)} />
-        <Route path='Casestudyinner' element={(<Casestudyinner />)} />
+        <Route path='/Casestudt/Casestudyinner' element={(<Casestudyinner />)} />
     </Routes>
 
     </div>

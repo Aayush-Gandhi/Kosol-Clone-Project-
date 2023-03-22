@@ -62,7 +62,7 @@ export default function Navbar(props) {
                                    </ul>
                               </div>
                               :
-                              <div className='bg-black text-[white]/[.80] w-[80%] mt-10 border-2 border-white flex flex-col items-center absolute'>
+                              <div className='bg-black text-[white]/[.80] w-[40%] mt-14  border-white flex flex-col items-center right-20 absolute'>
                          <ul className=' pb-8 space-y-4 text-xl'>
                               <li><a href="" onClick={() => Navigate ('/')}> Home </a></li>
                               <li><a href="" onClick={() => Navigate ('/Aboutus')}> Company </a></li>
@@ -84,11 +84,6 @@ export default function Navbar(props) {
                                    <button onClick={handleOpen} className='py-3 px-3 '><FaTimes /></button>
                               </div>
                     }
-
-
-
-
-
                </div>
           </div>
      )

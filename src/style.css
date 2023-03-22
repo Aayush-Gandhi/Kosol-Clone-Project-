@@ -51,3 +51,31 @@ body{
      background-image: url("../public/Images/Aboutus/Intro.png");
      background-size: cover;
 }
+.blogs_intro{
+     background-image: url("../public/Images/Aboutus/Intro.png");
+     background-size: cover;
+}
+.case_intro{
+     background-image: url("../public/Images/Aboutus/Intro.png");
+     background-size: cover;
+}
+
+
+.scrolling-text-container {
+     overflow: hidden;
+   }
+   
+   .scrolling-text {
+     display: inline-block;
+     white-space: nowrap;
+     animation: scrolling-text 15s linear infinite;
+   }
+   
+   @keyframes scrolling-text {
+     0% {
+       transform: translateX(100%);
+     }
+     100% {
+       transform: translateX(-100%);
+     }
+   }

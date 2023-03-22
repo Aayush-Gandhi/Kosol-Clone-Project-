@@ -28,10 +28,10 @@ export default function Scale({ data, idx, lastIdx }) {
                     <button
                          onMouseEnter={handleMouseEnter}
                          onMouseLeave={handleMouseLeave}
-                         className=' rounded-full w-10 h-10 bg-[grey] '
+                         className='rounded-full flex items-center w-5 h-5 lg:w-10 lg:h-10 bg-[grey] '
                     // onClick={handleOpen}
                     >+</button>
-                    <p>{data.year}</p>  
+                    <p className='text-sm lg:text-lg '>{data.year}</p>  
                </div>
                {isHovering &&
                     <div

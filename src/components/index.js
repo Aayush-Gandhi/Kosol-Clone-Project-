@@ -43,8 +43,14 @@ export {default as CareersIntro} from './Careers/CareersIntro'
 export {default as LifeAtKasol} from './Careers/LifeAtKasol'
 export {default as OpenPosition} from './Careers/OpenPosition'
 
+export {default as BlogIntro} from './Blogs/BlogIntro'
 export {default as Data1} from './Blogs/Data1'
 export {default as News_Blogs} from './Blogs/News_Blogs'
+
+export {default as Content} from './BlogInner/Content'
+export {default as InnerPost} from './BlogInner/InnerPost'
+
+export {default as CaseIntro} from './CaseStudy/CaseIntro'
 
 
 
