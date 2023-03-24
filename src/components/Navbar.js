@@ -15,6 +15,14 @@ export default function Navbar(props) {
      const handleOpen = () => {
           setOpen(!open)
      }
+const handleClose = () =>{
+     if (window.innerWidth>=1023){
+          setOpen(1)
+     }
+}
+
+    
+     window.addEventListener('resize', handleClose);
 
      return (
           <div>
@@ -50,31 +58,33 @@ export default function Navbar(props) {
                          open ?
                               <div className='text-white/[.80] xl:flex items-center hidden justify-end lg:block lg:w-[80%]'>
                                    <ul className='flex space-x-10  xl:space-x-14 text-sm xl:text-lg items-center'>
-                                        <li><a href="" onClick={() => Navigate ('/')}>Home </a></li>
-                                        <li><a href="" onClick={() => Navigate ('/Aboutus')}> Company </a></li>
-                                        <li><a href="" onClick={() => Navigate ('/Productinner')}> Solar Solutions </a></li>
-                                        <li><a href="" onClick={() => Navigate ('/Media')}> Media </a></li>
-                                        <li><a href="" onClick={() => Navigate ('/Careers')}> Careers </a></li>
-                                        <li><a href="" onClick={() => Navigate ('/Blog')}> Blog </a></li>
-                                        <li><a href="" onClick={() => Navigate ('/Casestudy')}> Case Study </a></li>
-                                        <button className='border-2 rounded-md px-4 py-2 border-[#00ACEF] text-[#00ACEF] hover:bg-[#00ACEF] hover:text-white' 
-                                        onClick={() => Navigate ('/Contactus')}> Contactus </button>
+                                        <li><a href="" onClick={() => Navigate('/')}>Home </a></li>
+                                        <li><a href="" onClick={() => Navigate('/Aboutus')}> Company </a></li>
+                                        <li><a href="" onClick={() => Navigate('/Productinner')}> Solar Solutions </a></li>
+                                        <li><a href="" onClick={() => Navigate('/Media')}> Media </a></li>
+                                        <li><a href="" onClick={() => Navigate('/Careers')}> Careers </a></li>
+                                        <li><a href="" onClick={() => Navigate('/Blog')}> Blog </a></li>
+                                        <li><a href="" onClick={() => Navigate('/Casestudy')}> Case Study </a></li>
+                                        <button className='border-2 rounded-md px-4 py-2 border-[#00ACEF] text-[#00ACEF] hover:bg-[#00ACEF] hover:text-white'
+                                             onClick={() => Navigate('/Contactus')}> Contactus </button>
                                    </ul>
                               </div>
-                              :
-                              <div className='bg-black text-[white]/[.80] w-[40%] mt-14  border-white flex flex-col items-center right-20 absolute'>
-                         <ul className=' pb-8 space-y-4 text-xl'>
-                              <li><a href="" onClick={() => Navigate ('/')}> Home </a></li>
-                              <li><a href="" onClick={() => Navigate ('/Aboutus')}> Company </a></li>
-                              <li><a href="" onClick={() => Navigate ('/Productinner')}> Solar Solutions </a></li>
-                              <li><a href="" onClick={() => Navigate ('/Media')}> Media </a></li>
-                              <li><a href="" onClick={() => Navigate ('/Careers')}> Careers </a></li>
-                              <li><a href="" onClick={() => Navigate ('/Blog')}> Blog </a></li>
-                              <li><a href="" onClick={() => Navigate ('/Casestudy')}> Case Study </a></li>
-                              <button className='border-2 rounded-md px-8 py-2 border-blue-400 text-blue-400'> Contact us </button>
-                         </ul>
-                    </div>
-                    }
+                              : 
+                                   // (window.innerWidth <= 768) ?
+
+                                        <div className='bg-black text-[white]/[.80] w-[40%] mt-14 border-white flex flex-col items-center right-20 absolute'>
+                                             <ul className=' pb-8 space-y-4 text-xl'>
+                                                  <li><a href="" onClick={() => Navigate('/')}> Home </a></li>
+                                                  <li><a href="" onClick={() => Navigate('/Aboutus')}> Company </a></li>
+                                                  <li><a href="" onClick={() => Navigate('/Productinner')}> Solar Solutions </a></li>
+                                                  <li><a href="" onClick={() => Navigate('/Media')}> Media </a></li>
+                                                  <li><a href="" onClick={() => Navigate('/Careers')}> Careers </a></li>
+                                                  <li><a href="" onClick={() => Navigate('/Blog')}> Blog </a></li>
+                                                  <li><a href="" onClick={() => Navigate('/Casestudy')}> Case Study </a></li>
+                                                  <button className='border-2 rounded-md px-8 py-2 border-blue-400 text-blue-400'> Contact us </button>
+                                             </ul>
+                                        </div> }
+                                      
 
                     {
                          open ?

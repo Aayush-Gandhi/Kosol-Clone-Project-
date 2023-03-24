@@ -1,8 +1,5 @@
 import Data1 from '../Blogs/Data1'
-import a from '../../Assets/Blog/1.png'
-import b from '../../Assets/Blog/2.png'
-import c from '../../Assets/Blog/3.png'
-import d from '../../Assets/Blog/4.png'
+
 import { contentData } from '../BlogInner/ContentData'
 
 export default function News_Blogs({ id }) {

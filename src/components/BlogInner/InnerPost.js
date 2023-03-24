@@ -1,8 +1,49 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { contentData } from './ContentData';
 import { BiSearch } from 'react-icons/bi'
+import { useNavigate } from 'react-router-dom';
+import { pr } from '../Products/productData'
 
 export default function InnerPost() {
+
+    const productdata = pr 
+
+    const data = contentData;
+    const [searchValue, setsearchValue] = useState("")
+    const navigate = useNavigate()
+
+
+    const handleOnchange = (e) => {
+        const val = e.target.value
+        setsearchValue(val)
+       
+    }
+
+
+    let productList = []
+    const allProduct = () => {
+        for(let i=0;i<productdata.length;i++){
+            productList[i] = data[i].product.toLowerCase().replace(" ","") //Solar Pannel => solarpanel
+        }
+        console.log(productList)
+    }
+
+    const matchSearch = (val) => {
+        if(productList.includes(val)){
+            return true
+        }
+        return false
+    }
+    const handleSearch = () => {
+        const val = (searchValue.charAt(0).toUpperCase()) + (searchValue.slice(1).replace(" ", "").toLowerCase()) //Solar Pannel => Solarpanel
+        allProduct()
+        const val2 = val
+        setsearchValue(val)
+        const path1 = "../../Products/Products/"+val
+        matchSearch(val2.toLowerCase()) ? navigate(path1):alert("Product not available")
+    }
+
+
 
     const categories = [
         {
@@ -19,13 +60,12 @@ export default function InnerPost() {
         },
     ]
 
-    const data = contentData;
 
     return (
         <div className='border p-5 m-5'>
             <div className='relative'>
                 <div className='flex items-center'>
-                    <input type="text" placeholder='Search' className='w-full bg-[#252525] p-2'/><BiSearch className='absolute right-1  text-white' />
+                    <input type="text" onChange={(e) => handleOnchange(e)} placeholder='Search' className='text-white w-full bg-[#252525] p-2' /><BiSearch onClick={handleSearch} className='cursor-pointer absolute right-1  text-white' />
                 </div>
             </div>
             <p className='text-white text-2xl mt-5'>Categories</p>
@@ -47,16 +87,16 @@ export default function InnerPost() {
                 </div>
                 <div className='text-lg'>
 
-                    <p className='border-t pt-4'>{data[0].date}</p>
-                    <p className='border-b pb-4'>{data[0].title}</p>
+                    <p className='border-t pt-4 font-semibold'>{data[contentData.length - 1].date}</p>
+                    <p className='border-b pb-4'>{data[contentData.length - 1].title}</p>
 
-                    <p className='border-t pt-4'>{data[1].date}</p>
-                    <p className='border-b pb-4'>{data[1].title}</p>
+                    <p className='border-t pt-4 font-semibold'>{data[contentData.length - 2].date}</p>
+                    <p className='border-b pb-4'>{data[contentData.length - 2].title}</p>
 
-                    <p className='border-t pt-4'>{data[2].date}</p>
+                    <p className='border-t pt-4 font-semibold'>{data[2].date}</p>
                     <p className='border-b pb-4'>{data[2].title}</p>
 
-                    <p className='border-t pt-4'>{data[3].date}</p>
+                    <p className='border-t pt-4 font-semibold'>{data[3].date}</p>
                     <p className='border-b pb-4'>{data[3].title}</p>
                 </div>
                 <div>

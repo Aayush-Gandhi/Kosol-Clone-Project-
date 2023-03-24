@@ -4,9 +4,7 @@ import mapboxgl from "!mapbox-gl"; // eslint-disable-line import/no-webpack-load
 import "mapbox-gl/dist/mapbox-gl.css";
 import { Map, Marker, NavigationControl, Popup } from "react-map-gl";
 
-const MAPBOX_GL_ACCESS_TOKEN =
-    "pk.eyJ1IjoibWluaW1hbHByb2QiLCJhIjoiY2trNTl1b3dzMWJ2MjJzcnk1amEzemh3bCJ9.D1069PhiG7WWBRhkXOOXVA";
-
+const MAPBOX_GL_ACCESS_TOKEN = process.env.REACT_APP_MAPBOX_GL_ACCESS_TOKEN;
 
 const MapSearch = () => {
     const [popupInfo, setPopupInfo] = useState(null);
@@ -16,6 +14,8 @@ const MapSearch = () => {
         zoom: 18,
 
     });
+
+    console.log(process.env.REACT_APP_MAPBOX_GL_ACCESS_TOKEN)
 
     return (
         <div className="" style={{ height: "810px", width: "100%" }}>

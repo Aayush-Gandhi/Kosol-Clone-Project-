@@ -1,10 +1,11 @@
 import React from 'react'
-import { Footer, Navbar } from '../components'
+import { CaseInnerIntro, Footer, Navbar } from '../components'
 
 export default function Productinner() {
   return (
     <div>
         <Navbar />
+        <CaseInnerIntro />
         <Footer />      
     </div>
   )

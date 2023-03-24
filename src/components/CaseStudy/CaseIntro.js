@@ -1,12 +1,12 @@
 import React from 'react'
 import SystemDate from '../SysDate'
-import { Products } from './Products'
+import { CaseStudy } from './CaseStudy'
 
 export default function BlogIntro() {
   return (
     <div>
       <div className="case_intro px-[8%] py-[8%] ">
-        <p className="text-white text-4xl font-semibold">Blog </p>
+        <p className="text-white text-4xl font-semibold">Case Study </p>
       </div>
       <div className='bg-[#252525] px-[10%]'>
         <div className="bg-[#252525] flex justify-center gap-10 text-white scrolling-text-container">
@@ -15,7 +15,7 @@ export default function BlogIntro() {
           </div>
         </div>
       </div>
-      {/* <Products /> */}
+      <CaseStudy />
     </div>
   )
 }

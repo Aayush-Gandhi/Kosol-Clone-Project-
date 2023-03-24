@@ -3,8 +3,8 @@ import { FiUser } from "react-icons/fi"
 import { SlCalender } from 'react-icons/sl'
 import { Routes, useNavigate } from 'react-router-dom'
 
-const Data1 = ({ date, author, product, info, img, idpage }) => {
-    console.log("data1",idpage)
+const   Data1 = ({ date, author, product, info, img, idpage }) => {
+    // console.log("data1",idpage)
     const navigate = useNavigate()
 
     return (

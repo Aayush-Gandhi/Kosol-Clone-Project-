@@ -5,7 +5,7 @@ export default function Productinner() {
   return (
     <div>
         <Navbar />
-        {/* <CaseIntro /> */}
+        <CaseIntro />
         <Footer />      
     </div>
   )

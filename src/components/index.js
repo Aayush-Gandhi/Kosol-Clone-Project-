@@ -50,7 +50,12 @@ export {default as News_Blogs} from './Blogs/News_Blogs'
 export {default as Content} from './BlogInner/Content'
 export {default as InnerPost} from './BlogInner/InnerPost'
 
+export {default as Products} from './Products/Products'
+
 export {default as CaseIntro} from './CaseStudy/CaseIntro'
+
+export {default as CaseInnerIntro} from './CaseStudyInner/CaseInnerIntro'
+// export {default as CaseInnerIntro} from './CaseStudy/CaseInnerIntro'
 
 
 
