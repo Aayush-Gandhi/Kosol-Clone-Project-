@@ -55,7 +55,7 @@ export {default as Products} from './Products/Products'
 export {default as CaseIntro} from './CaseStudy/CaseIntro'
 
 export {default as CaseInnerIntro} from './CaseStudyInner/CaseInnerIntro'
-// export {default as CaseInnerIntro} from './CaseStudy/CaseInnerIntro'
+export {default as CaseInnerContent} from './CaseStudyInner/CaseInnerContent'
 
 
 

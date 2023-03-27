@@ -1,11 +1,11 @@
 import React from 'react'
 import { FiUser } from "react-icons/fi"
 import { SlCalender } from 'react-icons/sl'
-import { Routes, useNavigate } from 'react-router-dom'
+import { navigate, useNavigate } from 'react-router-dom'
 
-const   Data1 = ({ date, author, product, info, img, idpage }) => {
+const Data1 = ({ date, author, product, info, img, idpage }) => {
     // console.log("data1",idpage)
-    const navigate = useNavigate()
+    const navigate = useNavigate() 
 
     return (
         <div className='pt-20'>

@@ -20,7 +20,7 @@ function App() {
         <Route path='/Blog/Bloginner/:id' element={(<Bloginner />)} />
         <Route path='Products/Products/:searchPr' element={(<Products />)} />
         <Route path='Casestudy' element={(<Casestudy />)} />
-        <Route path='/Casestudt/Casestudyinner' element={(<Casestudyinner />)} />
+        <Route path='/Casestudy/Casestudyinner' element={(<Casestudyinner />)} />
     </Routes>
 
     </div>

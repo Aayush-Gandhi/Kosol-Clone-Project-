@@ -194,9 +194,3 @@ export const csi = [
         },
     ]
 
-  return (
-    <div>
-      
-    </div>
-  )
-
