@@ -3,9 +3,9 @@ import React from "react";
 export default function ManufacturingUnit() {
     return (
         <div className="bg-black/[0.89] px-[8%] py-20">
-                <div className="flex">
+                <div className="pl-2 lg:flex ">
                     <div className="">
-                        <img src="/Images/Aboutus/Unit.png" className="w-[80%]" alt="" />
+                        <img src="/Images/Aboutus/Unit.png" className="w-[100%] lg:w-[80%]" alt="" />
                     </div>
                     <div className="text-white">
                         <ul className="list-disc w-[90%]">

@@ -50,8 +50,8 @@ export default function TeamLeader() {
           <div className='bg-black/[.89] pb-20'>
                <div className="flex pt-20 mb-10 px-[8%]">
                     <div className='w-1/2'>
-                         <p className='text-[#00ACEF] text-2xl font-semibold'>kasol Energie</p>
-                         <p className='text-white text-4xl font-semibold'>kasol Energie Technology</p>
+                         <p className='text-[#00ACEF] text-2xl font-semibold'>Sun Energie</p>
+                         <p className='text-white text-4xl font-semibold'>Sun Energie Technology</p>
                     </div>
                     <div className='w-1/2'>
                          <p className='text-white/[.80] text-lg font-normal'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>

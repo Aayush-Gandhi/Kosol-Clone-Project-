@@ -14,8 +14,8 @@ export default function Technology() {
                </div>
                <div className="lg:flex mt-20 mb-10">
                     <div className='lg:w-1/2'>
-                         <p className='text-[#00ACEF] text-base lg:text-2xl font-semibold'>kasol Energie</p>
-                         <p className='text-white text-xl lg:text-4xl font-semibold'>kasol Energie Technology</p>
+                         <p className='text-[#00ACEF] text-base lg:text-2xl font-semibold'>Sun Energie</p>
+                         <p className='text-white text-xl lg:text-4xl font-semibold'>Sun Energie Technology</p>
                     </div>
                     <div className='lg:w-1/2'>
                          <p className='text-white/[.80] text-lg font-normal'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
