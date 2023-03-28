@@ -1,8 +1,12 @@
 import React from 'react'
 import { ImFacebook, ImLinkedin2, ImTwitter, ImYoutube } from 'react-icons/im'
 import { AiFillInstagram } from 'react-icons/ai'
+import { useNavigate } from 'react-router-dom'
 
 export default function Footer() {
+
+     const Navigate = useNavigate ()
+
      return (
           <div>
                <div className="lg:flex text-white bg-[black]/[.89] px-[8%] py-10 lg:py-20">
@@ -18,11 +22,11 @@ export default function Footer() {
                          <div className='mt-10 lg:mt-0 '>
                               <p className='font-semibold text-base  lg:text-2xl'>Company</p>
                               <div className='text-white/[.80] text-sm mt-5  space-y-3 flex flex-col'>
-                                   <a href=''>About us</a>
-                                   <a href=''>Leadership Team</a>
-                                   <a href=''>News & Media</a>
-                                   <a href=''>Our Projects</a>
-                                   <a href=''>Contacts</a>
+                                   <a href='' onClick={() => Navigate('/')} >About us</a>
+                                   <a href='' onClick={() => Navigate('/')}>Leadership Team</a>
+                                   <a href='' onClick={() => Navigate('Media')}>News & Media</a>
+                                   <a href='' onClick={() => Navigate('/')}>Our Projects</a>
+                                   <a href='' onClick={() => Navigate('/Contactus')}>Contacts</a>
                               </div>
                          </div>
                          <div>
@@ -60,7 +64,7 @@ export default function Footer() {
                     </div>
                </div>
                <div className='bg-black/[.80] items-center px-[8%] lg:flex gap-[20%]'>
-                    <p className='text-white/[.80] text-xs'>©2021 KOSOL ENERGIE PVT LTD. All Rights Reserved.</p>
+                    <p className='text-white/[.80] text-xs'>©2021 Sun Energie PVT LTD. All Rights Reserved.</p>
                     <img src="/Images/footerimg.png" className='h-4 w-36 items-center' alt="" />
                </div>
           </div>

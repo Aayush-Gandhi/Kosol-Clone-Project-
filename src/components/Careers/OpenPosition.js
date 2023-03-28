@@ -39,7 +39,7 @@ export default function OpenPosition() {
         <div className='bg-black/[.90] px-[8%] pb-20'>
             <div className='flex justify-between pt-20'>
                 <div>
-                    <p className='text-xl font-semibold text-[#00ACEF]'>kasol Energie</p>
+                    <p className='text-xl font-semibold text-[#00ACEF]'>Sun Energie</p>
                     <p className='text-4xl font-semibold text-white mt-2'>Open Position</p>
                 </div>
                 <div>

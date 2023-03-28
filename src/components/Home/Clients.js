@@ -40,7 +40,7 @@ export default function Clients() {
           <div className='bg-black/[.90] px-[8%] pt-20'>
                <div className='flex justify-between'>
                     <div className='text-white'>
-                         <p className='text-sm lg:text-2xl text-[#00ACEF]'>kasol Customers</p>
+                         <p className='text-sm lg:text-2xl text-[#00ACEF]'>Solar Customers</p>
                          <p className='text-base lg:text-4xl'>Meet Our Clients</p>
                     </div>
                     <div>

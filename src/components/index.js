@@ -6,6 +6,7 @@ export {default as Scale} from './Scale'
 export {default as ViewPDF} from './ViewPDF'
 export {default as DownloadPDF} from './DownloadPDF'
 export {default as Pagination} from './Pagination'
+export {default as Marquee} from './Marquee'
 
 export {default as HomeMain} from './Home/HomeMain'
 export {default as Aboutus} from './Home/Aboutus'

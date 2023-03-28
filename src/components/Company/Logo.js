@@ -26,7 +26,7 @@ export default function Logo() {
                     logos.map((data) => {
                         return (
                             <div className='relative'>
-                                <button className='bg-white p-2 absolute grayscale hover:grayscale-0 hover:scale-75 hover:border-4 border-[#00ACEF] px-10 rounded-md'>
+                                <button className='bg-white p-2 lg:absolute grayscale hover:grayscale-0 hover:scale-75 hover:border-4 border-[#00ACEF] px-10 rounded-md'>
                                     <img src={data.img} className='h-24 w-36' alt="" />
                                 </button>
                             </div>

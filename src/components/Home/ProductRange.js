@@ -1,6 +1,4 @@
 import React from 'react'
-
-
 export default function ProductRange() {
      const productrange = [
           {
@@ -28,7 +26,7 @@ export default function ProductRange() {
           <div className='bg-black/[.90] px-[8%]'>
                <div className='flex flex-col lg:flex-row lg:items-center justify-between'>
                     <div className='w-2/3'>
-                         <p className='text-sm lg:text-2xl font-semibold text-[#00ACEF] pt-4'> kasol Energie </p>
+                         <p className='text-sm lg:text-2xl font-semibold text-[#00ACEF] pt-4'> Sun Energie </p>
                          <p className='text-base lg:text-4xl font-semibold text-white'> Product Range</p>
                     </div>
                     <div className=''>
@@ -37,13 +35,13 @@ export default function ProductRange() {
                     </div>
                </div>
 
-               <div className='grid grid-col-1 gap-5 md:grid-cols-2 xl:grid-cols-4 mt-10'>
+               <div className='grid grid-col-1 w-[100%] gap-5 md:grid-cols-2 xl:grid-cols-4 mt-10'>
                     {
                          productrange.map((data) => {
                               return (
                                    <div className='relative lg:w-[80%]'>
                                         <div className=''>
-                                             <img src={data.primg} alt="" srcset="" /></div>
+                                             <img src={data.primg} alt="" srcset=""/></div>
                                         <div className='bg-white rounded-b-xl px-5'>
                                              <p className='text-[#00ACEF] font-bold pt-5 text-ellipsis overflow-hidden whitespace-nowrap text-base'>  {data.title}</p>
                                              <p className='text-sm lg:text-lg font-medium text-black/[.80] mt-5 pb-5'>{data.info}</p>
@@ -58,12 +56,12 @@ export default function ProductRange() {
                          })
                     }
                     </div>
-                    <div className="lg:flex mt-10 justify-between">
+                    <div className="lg:flex items-center mt-10 justify-between">
                          <div className=''>
                               <p className='text-sm lg:text-lg font-normal text-white/[.80]'>We drive the transition to more sustainable, reliable & affordable energy systems <span className='text-blue-600'> <a href=""> Find Your Solution </a> </span></p>
                          </div>
                          <div>
-                         <button className='p-2 text-sm mt-5 border-2 rounded-md lg:px-8 lg:py-2 border-[#00ACEF] text-[#00ACEF] hover:bg-[#00ACEF] hover:text-white'> View all Products </button>
+                         <button className='p-2 text-sm mt-5 border-2 rounded-md lg:px-8  border-[#00ACEF] text-[#00ACEF] hover:bg-[#00ACEF] hover:text-white'> View all Products </button>
                          </div>
                     </div>
 

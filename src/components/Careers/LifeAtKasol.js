@@ -6,7 +6,7 @@ export default function LifeAtKasol() {
         <div className='bg-black/[.90] px-[8%]'>
             <div className='flex justify-between pt-20'>
                 <div>
-                    <p className='text-xl font-semibold text-[#00ACEF]'>kasol Energie</p>
+                    <p className='text-xl font-semibold text-[#00ACEF]'>Sun Energie</p>
                     <p className='text-4xl font-semibold text-white mt-2'>Photo Gallery</p>
                 </div>
                 <div>
@@ -36,8 +36,8 @@ export default function LifeAtKasol() {
                 </div>
             </div>
             <div className='text-white'>
-                <p className='text-2xl font-semibold mt-3'> Working With kasol Energie</p>
-                <p className='text-lg w-[70%] mt-3 pb-10'> Kosol Energie motivates its employees to think like they own the organization. This ownership mindset supports the company’s corporate vision and mission statements by encouraging employees to take responsibility and accountability in their jobs and in the overall performance, and helps grow and strengthen the integrity. </p>
+                <p className='text-2xl font-semibold mt-3'> Working With Sun Energie</p>
+                <p className='text-lg w-[70%] mt-3 pb-10'> Sun Energie motivates its employees to think like they own the organization. This ownership mindset supports the company’s corporate vision and mission statements by encouraging employees to take responsibility and accountability in their jobs and in the overall performance, and helps grow and strengthen the integrity. </p>
             </div>
         </div>
     )

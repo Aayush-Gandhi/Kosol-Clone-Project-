@@ -6,7 +6,8 @@ import { contentData, comment } from './ContentData';
 import InnerPost from './InnerPost';
 import Data1 from '../Blogs/Data1'
 
-export default function Content() {
+export default function Content() { 
+    // 
 
     let { id } = useParams();
     const [user, setUser] = useState(null);

@@ -10,7 +10,7 @@ export default function News_Blogs({ id }) {
   return (
     <div className='bg-black/[.90] px-[8%]'>
       <div className='text-center pt-10'>
-        <p className='text-xl font-semibold text-[#00ACEF]'>kasol Energie</p>
+        <p className='text-xl font-semibold text-[#00ACEF]'>Sun Energie</p>
         <p className='text-4xl font-semibold text-white mt-2'>Photo Gallery</p>
         <p className='text-lg text-white/[.80] px-[10%] mt-3'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
       </div>
@@ -18,7 +18,8 @@ export default function News_Blogs({ id }) {
       {
         id ==1  ?
           <div className='grid grid-cols-2'>
-            <Data1 date={data[0].date} author={data[0].author} product={data[0].product} info={data[0].title} img={data[0].img} idpage={1} />
+            <Data1 date={data[0].date} author={data[0].author} product={data[0].product} info={data[0].title} img={data[0].img} idpage={1} /> 
+            {/*current page number pass kriye to? */}
             <Data1 date={data[1].date} author={data[1].author} product={data[1].product} info={data[1].title} img={data[1].img} idpage={2} />
             <Data1 date={data[2].date} author={data[2].author} product={data[2].product} info={data[2].title} img={data[2].img} idpage={3} />
             <Data1 date={data[3].date} author={data[3].author} product={data[3].product} info={data[3].title} img={data[3].img} idpage={4} />

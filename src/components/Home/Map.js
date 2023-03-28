@@ -42,7 +42,7 @@ export default function Map() {
           <div className='map px-[8%]'>
                <div className='flex pt-10 lg:pt-20'>
                     <div className='text-white w-[100%] md:w-[40%]'>
-                         <p className='text-sm lg:text-2xl font-semibold text-[#00ACEF] pt-4'>kasol Energie</p>
+                         <p className='text-sm lg:text-2xl font-semibold text-[#00ACEF] pt-4'>Sun Energie</p>
                          <p className='text-base lg:text-4xl mt-1 font-semibold'>Lorem Ipsum is simply dummy</p>
                          <p className='text-sm lg:text-lg mt-5 mb-5 lg:w-[70%] text-white/[.80]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                          

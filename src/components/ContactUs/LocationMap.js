@@ -43,7 +43,7 @@ const MapSearch = () => {
                     onClick={(e) => {
                         const { lng, lat } = e.target._lngLat;
                         e.originalEvent.stopPropagation();
-                        setPopupInfo({ lng, lat, name: "KOSOL ENERGIE PVT" });
+                        setPopupInfo({ lng, lat, name: "Sun Energie PVT" });
                     }}
                     style={{ cursor: "pointer" }}
                 />
@@ -74,7 +74,7 @@ const MapSearch = () => {
                 <NavigationControl position="bottom-left" />
 
                 <div className="bg-white absolute bottom-[20%] right-[10%] text-lg p-6 w-[30%]">
-                    <p className="w-[70%]">Kosol Energie Pvt. Ltd. 744, "Kalthia House", Shivdham Farm, Bh.Karnavati Club, S.G. Highway, Ahmedabad-380015, Gujarat, INDIA.</p>
+                    <p className="w-[70%]">Sun Energie Pvt. Ltd. 744, "Kalthia House", Shivdham Farm, Bh.Karnavati Club, S.G. Highway, Ahmedabad-380015, Gujarat, INDIA.</p>
                     <p className="w-[70%] mt-5">'Kalthia House', 193,Satyagrah Chhavni, Opp. Iscon Mall, S.G. Highway, Ahmedabad-380015, Gujarat, INDIA.</p>
                 </div>
             </Map>

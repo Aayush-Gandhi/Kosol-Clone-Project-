@@ -11,17 +11,20 @@ function App() {
 
     <Routes>
         <Route path='/' element={(<Home />)} />
-        <Route path='Aboutus' element={(<Aboutus />)} />
-        <Route path='Contactus' element={(<Contactus />)} />
-        <Route path='Productinner' element={(<Productinner />)} />
-        <Route path='Media' element={(<Media />)} />
-        <Route path='Careers' element={(<Careers />)} />
-        <Route path='Blog' element={(<Blog />)} />
+        <Route path='/Aboutus' element={(<Aboutus />)} />
+        <Route path='/Contactus' element={(<Contactus />)} />
+        <Route path='/Productinner' element={(<Productinner />)} />
+        <Route path='/Media' element={(<Media />)} />
+        <Route path='/Careers' element={(<Careers />)} />
+        <Route path='/Blog' element={(<Blog />)} />
         <Route path='/Blog/Bloginner/:id' element={(<Bloginner />)} />
-        <Route path='Products/Products/:searchPr' element={(<Products />)} />
-        <Route path='Casestudy' element={(<Casestudy />)} />
-        <Route path='/Casestudy/Casestudyinner' element={(<Casestudyinner />)} />
+        <Route path='/Products/Products/:searchPr' element={(<Products />)} />
+        <Route path='/Casestudy' element={(<Casestudy />)} />
+        <Route path='/Casestudy/Casestudyinner/:id' element={(<Casestudyinner />)} />
     </Routes>
+
+
+{/*  */}
 
     </div>
   );
