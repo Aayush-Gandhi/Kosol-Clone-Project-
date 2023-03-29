@@ -72,16 +72,16 @@ const handleClose = () =>{
                               : 
                                    // (window.innerWidth <= 768) ?
 
-                                        <div className='bg-black text-[white]/[.80] w-[40%] mt-14 border-white flex flex-col items-center right-20 absolute'>
-                                             <ul className=' pb-8 space-y-4 text-xl'>
-                                                  <li><a href="" onClick={() => Navigate('/')}> Home </a></li>
-                                                  <li><a href="" onClick={() => Navigate('/Aboutus')}> Company </a></li>
-                                                  <li><a href="" onClick={() => Navigate('/Productinner')}> Solar Solutions </a></li>
-                                                  <li><a href="" onClick={() => Navigate('/Media')}> Media </a></li>
-                                                  <li><a href="" onClick={() => Navigate('/Careers')}> Careers </a></li>
-                                                  <li><a href="" onClick={() => Navigate('/Blog')}> Blog </a></li>
-                                                  <li><a href="" onClick={() => Navigate('/Casestudy')}> Case Study </a></li>
-                                                  <button className='border-2 rounded-md px-8 py-2 border-blue-400 text-blue-400'> Contact us </button>
+                                        <div className='bg-black text-[white]/[.80] w-[200px] mt-14 border-white flex flex-col items-center right-[50px] top-[35px] absolute z-[100]'>
+                                             <ul className='divide-y w-full pb-8  lg:px-20  text-sm lg:text-xl'>
+                                                  <li className='menu_items'><a href="" onClick={() => Navigate('/')}> Home </a></li>
+                                                  <li className='menu_items'><a href="" onClick={() => Navigate('/Aboutus')}> Company </a></li>
+                                                  <li className='menu_items'><a href="" onClick={() => Navigate('/Productinner')}> Solar Solutions </a></li>
+                                                  <li className='menu_items'><a href="" onClick={() => Navigate('/Media')}> Media </a></li>
+                                                  <li className='menu_items'><a href="" onClick={() => Navigate('/Careers')}> Careers </a></li>
+                                                  <li className='menu_items'><a href="" onClick={() => Navigate('/Blog')}> Blog </a></li>
+                                                  <li className='menu_items'><a href="" onClick={() => Navigate('/Casestudy')}> Case Study </a></li>
+                                                  <button className='border-2 rounded-md ml-3 px-3 lg:px-8 py-2 border-blue-400 text-blue-400 text-sm'> Contact us </button>
                                              </ul>
                                         </div> }
                                       

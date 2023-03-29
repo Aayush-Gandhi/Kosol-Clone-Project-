@@ -51,7 +51,7 @@ export default function Experience() {
     return (
         <div className='bg-black/[.90] pb-48'>
             <div className='py-20 relative'>
-                <div className='border absolute w-full z-1 border-slate-200 top-[43%]'>
+                <div className='border absolute w-full z-1 border-slate-200 top-[90px] lg:top-[100px] '>
                 </div>
                 <div className='flex text-white justify-evenly z-10 relative text-2xl '>
                     {

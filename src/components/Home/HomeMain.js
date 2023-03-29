@@ -14,10 +14,10 @@ export default function HomeMain() {
                               <p className='text-sm md:text-base xl:text-lg font-medium mt-5'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  dummy text ever since the 1500s, </p>
                               {/* <Breadcrumbs /> */}
                          </div>
-                         <div className='flex flex-col items-end text-white space-y-2 overflow-hidden'>
+                         <div className='hidden lg:flex flex-col items-end text-white space-y-2 overflow-hidden'>
                               <button className='bg-black px-2 py-2 gap-2 items-center rounded text-xs xl:text-xl flex hover:-translate-x-0 duration-700 translate-x-[80%] '><IoCalculatorOutline /> SolarCalculator </button>
-                              <button className='bg-black px-3 py-2 gap-2 rounded flex w-fit hover:-translate-x-0 duration-700 translate-x-[80%] text-sm xl:text-base'> <IoLogoWhatsapp /> +91 9988776655 </button>
-                              <button className='bg-black px-3 py-2 gap-2 rounded flex w-fit hover:-translate-x-0 duration-700 translate-x-[80%] text-sm xl:text-base'> <IoCallSharp /> +91 9988776655 </button>
+                              <button className='bg-black px-3 py-2 gap-2 rounded flex w-fit hover:-translate-x-0 duration-700 translate-x-[80%] text-xs xl:text-base'> <IoLogoWhatsapp /> +91 9988776655 </button>
+                              <button className='bg-black px-3 py-2 gap-2 rounded flex w-fit hover:-translate-x-0 duration-700 translate-x-[80%] text-xs xl:text-base'> <IoCallSharp /> +91 9988776655 </button>
                          </div>
                     </div>
                </div>

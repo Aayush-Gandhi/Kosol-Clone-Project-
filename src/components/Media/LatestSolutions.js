@@ -12,7 +12,27 @@ export default function ProductRange() {
           speed: 500,
           slidesToShow: 3,
           slidesToScroll: 1,
-          arrows: false
+          arrows: false,
+          responsive: [
+               {
+                    breakpoint: 1024,
+                    settings: 
+                    {
+                         slidesToShow: 2,
+                         slidesToScroll: 1,
+                         arrows: true
+                    }
+               },
+               {
+                    breakpoint: 768,
+                    settings: 
+                    {
+                         slidesToShow: 1,
+                         slidesToScroll: 1,
+                         arrows: true
+                    }
+               }
+          ]
      };
 
      const productrange = [
@@ -46,8 +66,8 @@ export default function ProductRange() {
           <div className='bg-black/[.90] px-[8%] pt-32 pb-20' >
 
                <div className='text-center w-full'>
-                    <p className='text-2xl font-semibold text-[#00ACEF]'> kasol Energy </p>
-                    <p className='text-4xl font-semibold text-white px-[38%]'> Latest Projects, Solutions and Energy Supplies</p>
+                    <p className='text-lg lg:text-2xl font-semibold text-[#00ACEF]'> kasol Energy </p>
+                    <p className='text-xl lg:text-4xl font-semibold text-white lg:px-[25%]'> Latest Projects, Solutions and Energy Supplies</p>
                </div>
 
 
@@ -62,7 +82,7 @@ export default function ProductRange() {
                                         return (
                                              <div className='mt-10 ml-5'>
                                                   <div className='flex h-[30%] overflow-hidden '>
-                                                       <img src={data.primg} alt="" className='rounded-t-xl object-cover h-[500px] w-[90%]' />
+                                                       <img src={data.primg} alt="" className='rounded-t-xl object-cover h-[250px] md:h-[500px] w-[90%]' />
                                                   </div>
                                                   <div className='bg-white rounded-b-xl px-5 w-[90%]'>
                                                        <p className='text-[#00ACEF] font-bold pt-5'>{data.title}</p>

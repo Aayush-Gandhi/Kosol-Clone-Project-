@@ -46,14 +46,14 @@ export default function Application() {
     return (
         <div className='bg-black/[.90] px-[8%] py-20'>
             <div>
-                <p className='text-[#00ACEF] text-4xl font-semibold'>Application Area</p>
-                <div className="grid grid-cols-4 gap-y-10 text-white mt-5">
+                <p className='text-[#00ACEF] text-2xl lg:text-4xl font-semibold'>Application Area</p>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-y-10 text-white mt-5">
                     {
                         apparea.map((data) => {
                             return (
-                                <div className='bg-[#2b2b2b] w-[60%]  py-2 pl-8'>
+                                <div className='bg-[#2b2b2b] w-[90%] lg:w-[60%]  py-2 pl-8'>
                                     <ul className='list-disc'>
-                                        <li>{data.items}</li>
+                                        <li className='text-sm lg:text-base'>{data.items}</li>
                                     </ul>
                                 </div>
                             )
@@ -64,14 +64,14 @@ export default function Application() {
 
 
             <div className='mt-10'>
-                <p className='text-[#00ACEF] font-semibold text-4xl'> Advantages of ETC</p>
-                <div className="grid grid-cols-2 gap-10 text-white mt-5">
+                <p className='text-[#00ACEF] font-semibold text-2xl lg:text-4xl'> Advantages of ETC</p>
+                <div className="grid md:grid-cols-2 gap-10 text-white mt-5">
                     {
                         etc.map((data) => {
                             return (
                                 <div className='bg-[#2b2b2b]  py-2 pl-8'>
                                     <ul className='list-disc'>
-                                        <li className='w-[50%] text-lg font-medium'>{data.info}</li>
+                                        <li className='w-[90%] lg:w-[50%] text-sm  font-medium'>{data.info}</li>
                                     </ul>
                                 </div>
                             )

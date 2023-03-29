@@ -40,8 +40,8 @@ export default function Clients() {
           <div className='bg-black/[.90] px-[8%] pt-20'>
                <div className='flex justify-between'>
                     <div className='text-white'>
-                         <p className='text-sm lg:text-2xl text-[#00ACEF]'>Solar Customers</p>
-                         <p className='text-base lg:text-4xl'>Meet Our Clients</p>
+                         <p className='text-lg lg:text-2xl text-[#00ACEF]'>Solar Customers</p>
+                         <p className='text-2xl lg:text-4xl'>Meet Our Clients</p>
                     </div>
                     <div>
                          <button className='border-2 rounded-md lg:px-8 lg:py-2 text-sm p-2 border-[#00ACEF] text-[#00ACEF] hover:bg-[#00ACEF] hover:text-white'> View all Clients </button>

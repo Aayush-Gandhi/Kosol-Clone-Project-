@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import LatestProjects from '../Home/LatestProjects'
 import { csi } from '../CaseStudyInner/CaseStudydata'
 
-export const Images = ({ id, images }) => {
+export const Images = ({ images }) => {
 
     const navigate = useNavigate()  //
 

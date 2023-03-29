@@ -1,8 +1,12 @@
-body{
+/* body{
      padding-left: 10px;
-     padding-right: 10px;
-          
+     padding-right: 10px; 
+} */
+
+.menu_items{
+     padding: 12px 20px;
 }
+
 .home{
      background-image: url("../public/Images/Home.png");
      background-size: cover;

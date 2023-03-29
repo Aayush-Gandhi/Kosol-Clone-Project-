@@ -26,8 +26,8 @@ export default function ProductRange() {
           <div className='bg-black/[.90] px-[8%]'>
                <div className='flex flex-col lg:flex-row lg:items-center justify-between'>
                     <div className='w-2/3'>
-                         <p className='text-sm lg:text-2xl font-semibold text-[#00ACEF] pt-4'> Sun Energie </p>
-                         <p className='text-base lg:text-4xl font-semibold text-white'> Product Range</p>
+                         <p className='text-md lg:text-2xl font-semibold text-[#00ACEF] pt-4'> Sun Energie </p>
+                         <p className='text-2xl lg:text-4xl font-semibold text-white'> Product Range</p>
                     </div>
                     <div className=''>
                          <p className='text-sm text-justify lg:text-lg font-normal mt-5 lg:mt-0  text-white/[.80]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -35,11 +35,11 @@ export default function ProductRange() {
                     </div>
                </div>
 
-               <div className='grid grid-col-1 w-[100%] gap-5 md:grid-cols-2 xl:grid-cols-4 mt-10'>
+               <div className='grid grid-col-1 m-auto w-[80%] md:w-[100%] gap-5 md:grid-cols-2 xl:grid-cols-4 mt-10'>
                     {
                          productrange.map((data) => {
                               return (
-                                   <div className='relative lg:w-[80%]'>
+                                   <div className='relative w-[80%] md:w-full lg:w-[80%]'>
                                         <div className=''>
                                              <img src={data.primg} alt="" srcset=""/></div>
                                         <div className='bg-white rounded-b-xl px-5'>
