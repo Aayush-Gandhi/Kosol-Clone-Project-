@@ -12,7 +12,9 @@ export default function TeamLeader() {
           speed: 500,
           slidesToShow: 4,
           slidesToScroll: 1,
-          arrows: false
+          arrows: false,
+          autoplay: true,
+          autoplaySpeed: 2000
      };
 
      const productrange = [
@@ -87,7 +89,7 @@ export default function TeamLeader() {
                     </div>
                </div>
 
-{/*   */}
+               {/*   */}
 
           </div>
      )

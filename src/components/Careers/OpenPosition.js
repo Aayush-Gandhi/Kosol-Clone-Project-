@@ -11,6 +11,8 @@ export default function OpenPosition() {
         slidesToShow: 4,
         slidesToScroll: 1,
         arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
         responsive: [
             {
                 breakpoint: 767,
@@ -23,6 +25,13 @@ export default function OpenPosition() {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 2,
+                    arrows: true,
+                }
+            },
+            {
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 3,
                     arrows: true,
                 }
             }]
@@ -54,7 +63,7 @@ export default function OpenPosition() {
         <div className='bg-black/[.90] px-[8%] pb-20'>
             <div className='md:flex justify-between pt-20'>
                 <div>
-                    <p className='text-lg lg:text-xl font-semibold text-[#00ACEF]'>Sun Energie</p>
+                    <p className='text-lg lg:text-2xl font-semibold text-[#00ACEF]'>Sun Energie</p>
                     <p className='text-2xl lg:text-4xl font-semibold text-white mt-2'>Open Position</p>
                 </div>
                 <div>
@@ -66,10 +75,10 @@ export default function OpenPosition() {
                     {
                         position.map((data) => {
                             return (
-                                <div className='mt-10 mx-5'>
+                                <div className='mt-10 lg:mx-5'>
                                     <div className=' bg-[#292929] mx-5 p-5 overflow-hidden '>
-                                        <p alt="" className=' text-[#00ACEF] text-md md:text-lg'> {data.title}   </p>
-                                        <p className='text-white/[.80] text-sm md:text-md font-bold pt-5 pb-10'>{data.info}</p>
+                                        <p alt="" className=' text-[#00ACEF] text-md md:text-2xl'> {data.title}   </p>
+                                        <p className='text-white/[.80] text-sm md:text-xl pt-5 pb-10'>{data.info}</p>
                                         <a href='' className='text-[#00ACEF] font-semibold'> Apply Now  </a>
                                     </div>
                                     <div className='bg-white rounded-b-xl px-5 w-[90%]'>

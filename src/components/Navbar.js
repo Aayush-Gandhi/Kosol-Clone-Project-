@@ -81,7 +81,7 @@ const handleClose = () =>{
                                                   <li className='menu_items'><a href="" onClick={() => Navigate('/Careers')}> Careers </a></li>
                                                   <li className='menu_items'><a href="" onClick={() => Navigate('/Blog')}> Blog </a></li>
                                                   <li className='menu_items'><a href="" onClick={() => Navigate('/Casestudy')}> Case Study </a></li>
-                                                  <button className='border-2 rounded-md ml-3 px-3 lg:px-8 py-2 border-blue-400 text-blue-400 text-sm'> Contact us </button>
+                                                  <button className='border-2 rounded-md ml-3 px-3 lg:px-8 py-2 border-blue-400 text-blue-400 text-sm' onClick={() => Navigate('/Contactus')}> Contact us </button>
                                              </ul>
                                         </div> }
                                       

@@ -48,7 +48,7 @@ export default function Pagination() {
                                                     <a
                                                         key={index}
                                                         href="#"
-                                                        onClick={(e) => { setId(index + 1);window.scrollTo(0,0); e.preventDefault() }}
+                                                        onClick={(e) => { setId(index + 1);window.scrollTo(0,500); e.preventDefault() }}
                                                         className=" relative inline-flex items-center px-5 py-3 text-xl font-semibold text-white hover:bg-gray-50 hover:text-black"
                                                     >
                                                         {data.id}

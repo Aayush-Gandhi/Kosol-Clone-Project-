@@ -35,11 +35,11 @@ export default function ProductRange() {
                     </div>
                </div>
 
-               <div className='grid grid-col-1 m-auto w-[80%] md:w-[100%] gap-5 md:grid-cols-2 xl:grid-cols-4 mt-10'>
+               <div className='grid grid-col-1 m-auto w-[100%] md:w-[100%] gap-5 md:grid-cols-2 xl:grid-cols-4 mt-10'>
                     {
                          productrange.map((data) => {
                               return (
-                                   <div className='relative w-[80%] md:w-full lg:w-[80%]'>
+                                   <div className='relative w-[100%] md:w-full lg:w-[80%]'>
                                         <div className=''>
                                              <img src={data.primg} alt="" srcset=""/></div>
                                         <div className='bg-white rounded-b-xl px-5'>

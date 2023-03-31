@@ -25,7 +25,7 @@ export const contentData = [
         p2: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
         p3: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
         pimg: g,
-        person: "Written by Mark Jonson",
+        person: "Mark Jonson",
         cmt: "Purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae. In ante metus dictum tempor commodo ullamcorper volutpat lacus laoreet augue maurisa."
 
 
@@ -47,7 +47,7 @@ export const contentData = [
         p2: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
         p3: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
         pimg: g,
-        person: "Written by Mark Jonson",
+        person: "Mark Jonson",
         cmt: "Purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae. In ante metus dictum tempor commodo ullamcorper volutpat lacus laoreet augue maurisa."
 
     },
@@ -66,7 +66,7 @@ export const contentData = [
         p2: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
         p3: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
         pimg: g,
-        person: "Written by Mark Jonson",
+        person: "Mark Jonson",
         cmt: "Purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae. In ante metus dictum tempor commodo ullamcorper volutpat lacus laoreet augue maurisa."
 
     },
@@ -85,7 +85,7 @@ export const contentData = [
         p2: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
         p3: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
         pimg: g,
-        person: "Written by Mark Jonson",
+        person: "Mark Jonson",
         cmt: "Purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae. In ante metus dictum tempor commodo ullamcorper volutpat lacus laoreet augue maurisa."
 
     },
@@ -104,13 +104,13 @@ export const contentData = [
         p2: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
         p3: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
         pimg: g,
-        person: "Written by Mark Jonson",
+        person: "Mark Jonson",
         cmt: "Purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae. In ante metus dictum tempor commodo ullamcorper volutpat lacus laoreet augue maurisa."
 
     },
     {
         id: 6,
-        date: "",
+        date: "12 April",
         author: "F",
         product: "Solar Heater",
         img: b,
@@ -123,7 +123,7 @@ export const contentData = [
         p2: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
         p3: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
         pimg: g,
-        person: "Written by Mark Jonson",
+        person: "Mark Jonson",
         cmt: "Purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae. In ante metus dictum tempor commodo ullamcorper volutpat lacus laoreet augue maurisa."
 
     },
@@ -142,7 +142,7 @@ export const contentData = [
         p2: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
         p3: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
         pimg: g,
-        person: "Written by Mark Jonson",
+        person: "Mark Jonson",
         cmt: "Purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae. In ante metus dictum tempor commodo ullamcorper volutpat lacus laoreet augue maurisa."
 
     },
@@ -161,7 +161,7 @@ export const contentData = [
         p2: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
         p3: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
         pimg: g,
-        person: "Written by Mark Jonson",
+        person: "Mark Jonson",
         cmt: "Purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae. In ante metus dictum tempor commodo ullamcorper volutpat lacus laoreet augue maurisa."
 
     },
@@ -180,7 +180,7 @@ export const contentData = [
         p2: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
         p3: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
         pimg: g,
-        person: "Written by Mark Jonson",
+        person: "Mark Jonson",
         cmt: "Purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae. In ante metus dictum tempor commodo ullamcorper volutpat lacus laoreet augue maurisa."
 
     },
@@ -199,7 +199,7 @@ export const contentData = [
         p2: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
         p3: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
         pimg: g,
-        person: "Written by Mark Jonson",
+        person: "Mark Jonson",
         cmt: "Purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae. In ante metus dictum tempor commodo ullamcorper volutpat lacus laoreet augue maurisa."
 
     },
@@ -218,7 +218,7 @@ export const contentData = [
         p2: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
         p3: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
         pimg: g,
-        person: "Written by Mark Jonson",
+        person: "Mark Jonson",
         cmt: "Purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae. In ante metus dictum tempor commodo ullamcorper volutpat lacus laoreet augue maurisa."
 
     },
@@ -237,7 +237,7 @@ export const contentData = [
         p2: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
         p3: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
         pimg: g,
-        person: "Written by Mark Jonson",
+        person: "Mark Jonson",
         cmt: "Purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae. In ante metus dictum tempor commodo ullamcorper volutpat lacus laoreet augue maurisa."
 
     },

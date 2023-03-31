@@ -68,13 +68,13 @@ export default function InnerPost() {
                     <input type="text" onChange={(e) => handleOnchange(e)} placeholder='Search' className='text-white w-full bg-[#252525] p-2' /><BiSearch onClick={handleSearch} className='cursor-pointer absolute right-1  text-white' />
                 </div>
             </div>
-            <p className='text-white text-2xl mt-5'>Categories</p>
+            <p className='text-white text-lg lg:text-2xl mt-5'>Categories</p>
             <div >
                 {
                     categories.map((data) => {
                         return (
                             <div className='bg-[#252525] text-white'>
-                                <p className='text-lg m-2'>{data.product}</p>
+                                <p className='text-sm lg:text-lg m-2'>{data.product}</p>
                             </div>
                         )
                     })
@@ -85,7 +85,7 @@ export default function InnerPost() {
                 <div className='my-2'>
                     <p>Latest Post</p>
                 </div>
-                <div className='text-lg'>
+                <div className='text-sm lg:text-lg'>
 
                     <p className='border-t pt-4 font-semibold'>{data[contentData.length - 1].date}</p>
                     <p className='border-b pb-4'>{data[contentData.length - 1].title}</p>
@@ -100,15 +100,15 @@ export default function InnerPost() {
                     <p className='border-b pb-4'>{data[3].title}</p>
                 </div>
                 <div>
-                    <p className='font-semibold text-2xl mt-10 lg:mt-5'>Download</p>
-                    <div className="flex gap-5 mt-5">
-                        <div className='w-1/2'>
+                    <p className='font-semibold text-lg lg:text-2xl mt-10 lg:mt-5'>Download</p>
+                    <div className="flex gap-5 mt-5 m-auto">
+                        <div className='lg:w-1/2'>
                             <img src="/Images/Footerimg1.png" className='w-full' alt="" />
                             <p className='mt-3 ml-12'>Brochure</p>
                         </div>
-                        <div className='w-1/2'>
+                        <div className='lg:w-1/2'>
                             {/* h-24 lg:h-20 w-24 lg:w-20 */}
-                            <img src="/Images/Footerimg2.png" className='w-full' alt="" />
+                            <img src="/Images/Footerimg2.png" className='pr-2 w-full' alt="" />
                             <p className='mt-3 ml-12'>Catalogue</p>
                         </div>
                     </div>

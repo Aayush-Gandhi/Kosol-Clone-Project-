@@ -14,7 +14,7 @@ export default function LifeAtKasol() {
                 </div>
             </div>
 
-            <div className="grid  grid-rows-2 grid-flow-col h-[180px] md:h-[210px] lg:h-[700px] w-[100%] gap-5">
+            <div className="grid  grid-rows-2 grid-flow-col h-[133px] md:h-[210px] lg:h-[500px]  w-[100%] gap-5">
 
                 <div className='row-span-2 overflow-hidden'>
                     <img src="/Images/Careers/1.png" className='h-[100%] w-[100%] transition duration-700 ease-in-out hover:scale-110' alt="" />
@@ -37,7 +37,7 @@ export default function LifeAtKasol() {
             </div>
             <div className='text-white'>
                 <p className='text-lg lg:text-2xl font-semibold mt-3'> Working With Sun Energie</p>
-                <p className='text-sm lg:text-lg w-[70%] mt-3 pb-10'> Sun Energie motivates its employees to think like they own the organization. This ownership mindset supports the company’s corporate vision and mission statements by encouraging employees to take responsibility and accountability in their jobs and in the overall performance, and helps grow and strengthen the integrity. </p>
+                <p className='text-sm lg:text-lg lg:w-[70%] mt-3 pb-10'> Sun Energie motivates its employees to think like they own the organization. This ownership mindset supports the company’s corporate vision and mission statements by encouraging employees to take responsibility and accountability in their jobs and in the overall performance, and helps grow and strengthen the integrity. </p>
             </div>
         </div>
     )

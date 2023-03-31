@@ -11,7 +11,7 @@ export default function Form({ data, selectedIndex }) {
                     <p className='text-white font-semibold text-2xl'>{data.tname}</p>
                     <p className='text-white text-lg font-medium'>Trust of our customersis our first priority.</p>
 
-                    <div className="grid grid-cols-2 w-[95%] gap-5 mt-5">
+                    <div className="grid grid-cols-2 w-[95%] gap-5 mt-5 text-white">
                         <div>
                             <input type="text" placeholder='Your Name' className='border-b-2 bg-transparent px-1 w-full lg:px-3 py-2 font-medium' />
                         </div>
@@ -28,7 +28,7 @@ export default function Form({ data, selectedIndex }) {
                             <input type="text" placeholder='Comments' className='border-b-2 bg-transparent px-1 w-full lg:px-3 py-2 font-medium' />
                         </div>
                         <div>
-                            <input type="button" value="Submit" className='bg-[#00ACEF] rounded text-white px-5 py-1' />
+                            <input type="Submit" value="Submitn" className='bg-[#00ACEF] rounded text-white px-5 py-1' />
                         </div>
                     </div>
                 </form>

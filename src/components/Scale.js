@@ -30,12 +30,12 @@ export default function Scale({ data, idx, lastIdx }) {
                          onMouseLeave={handleMouseLeave}
                          className='rounded-full relative flex items-center w-5 h-5 lg:w-10 lg:pl-3 lg:h-10 bg-[grey] '
                     // onClick={handleOpen}
-                    ><span className='absolute'>+</span></button>
+                    ><span className=''>+</span></button>
                     <p className='text-sm lg:text-lg '>{data.year}</p>  
                </div>
                {isHovering &&
                     <div
-                         className={`mt-5 absolute bg-[#252525] p-4 m-auto w-[200px] rounded ${lastIdx - idx < 1 ? "-left-[190px]" : ""}`} >
+                         className={`mt-5 absolute bg-[#252525] p-4 m-auto w-[200px] rounded ${lastIdx - idx < 4 ? "-left-[190px]" : ""} lg:${lastIdx - idx < 5 ? "-left-[190px]" : ""}`} >
                               
                          <p className='font-semibold text-lg lg:text-2xl'>{data.title}</p>
                          <p className='text-sm lg:text-lg mt-5'>{data.info}</p>
