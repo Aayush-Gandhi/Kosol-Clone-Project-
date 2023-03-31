@@ -13,18 +13,18 @@ export default function TestFrom({contactbtn }) {
     
     return (
         <div>
-            <div className='flex text-white justify-evenly text-xl'>
+            <div className='grid grid-cols-2 gap-y-3 lg:space-y-0 md:flex text-white lg:justify-between justify-items-center text-sm lg:text-xl'>
                 {
                     contactbtn.map((data, index) => {
                         return (
-                            <div>
-                                <button key={index} className='bg-[#2b2b2b] py-3 w-[220PX]' onClick={() => handleClickBtn(data.id)}>{data.btnname}</button>
+                            <div key={index}>
+                                <button key={index} className='bg-[#2b2b2b] py-3 w-[150px] lg:w-[220PX]' onClick={() => handleClickBtn(data.id)}>{data.btnname}</button>
                             </div>
                         )
                     })
                 }
             </div>
-            <div>
+            <div className=''>
                 {
                     contactbtn.map((data) => {
                         return(

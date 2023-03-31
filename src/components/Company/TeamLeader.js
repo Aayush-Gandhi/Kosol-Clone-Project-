@@ -64,9 +64,9 @@ export default function TeamLeader() {
                     <div className='relative'>
                          <Slider {...settings}>
                               {
-                                   productrange.map((data) => {
+                                   productrange.map((data,index) => {
                                         return (
-                                             <div className='teamleadermt-10 '>
+                                             <div className='teamleadermt-10' key={index}>
                                                   <div className='relative flex h-auto overflow-hidden '>
 
                                                        <a href="" className='relative'>

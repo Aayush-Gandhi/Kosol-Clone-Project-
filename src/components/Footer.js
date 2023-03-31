@@ -5,18 +5,18 @@ import { useNavigate } from 'react-router-dom'
 
 export default function Footer() {
 
-     const Navigate = useNavigate ()
+     const Navigate = useNavigate()
 
      return (
           <div>
                <div className="lg:flex text-white bg-[black]/[.89] px-[8%] py-10 lg:py-20">
                     <div className='lg:w-1/4'>
-                         <img src="/Images/Footerlogo.png" className='w-[20%]' alt="" />
+                         {/* <img src="/Images/Footerlogo.png" className='w-[20%]' alt="" /> */}
+                         <img src="/Images/Sun.png" className='w-[25%]' alt="" />
                          <p className='text-white text-sm lg:text-lg font-normal lg:w-[80%] mt-3 text-white/[.80]'>If you have any questions or need help, feel free to contact with our team.</p>
-                         <div className="flex mt-5 gap-5">
-                              <img src="/Images/logo.png" className='w-[25%]' alt="" />
-                              <img src="/Images/kasolRay.png" className='w-[25%]' alt="" />
-                         </div>
+
+                         {/* <img src="/Images/kasolRay.png" className='w-[25%]' alt="" /> */}
+
                     </div>
                     <div className="flex lg:w-2/4 justify-around sm:mt-10 md:mt-0 lg:mt-0">
                          <div className='mt-10 lg:mt-0 '>

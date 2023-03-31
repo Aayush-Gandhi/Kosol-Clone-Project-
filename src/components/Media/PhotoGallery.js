@@ -3,10 +3,10 @@ import React from 'react'
 export default function PhotoGallery() {
     return (
         <div className='bg-black/[.90] pt-20 px-[8%]'>
-            <div className='text-center'>
-                <p className='text-lg lg:text-xl font-semibold text-[#00ACEF]'>Sun Energie</p>
-                <p className='text-2xl lg:text-4xl font-semibold text-white mt-2'>Photo Gallery</p>
-                <p className='text-sm lg:text-lg text-white/[.80] px-2 lg:px-[35%] mt-3 mb-10'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+            <div className='lg:text-center'>
+                <p className='text-lg lg:text-xl font-semibold text-[#00ACEF] text-center'>Sun Energie</p>
+                <p className='text-2xl lg:text-4xl font-semibold text-white text-center'>Photo Gallery</p>
+                <p className='text-sm lg:text-lg text-white/[.80]  lg:px-[35%] mt-3 mb-10 text-justify'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
             </div>
 
             <div className="grid h-[150px] md:h-[450px] lg:h-[900px] m-auto grid-rows-2 grid-flow-col gap-5 w-[100%] px-[8%]">

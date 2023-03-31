@@ -8,20 +8,23 @@ export default function EnergySystem() {
                <p className='text-white/[.80] pb-20 lg:w-[35%] mt-5'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever
                     since the 1500s,    </p>
 
-               <div className='flex'>
-                    <div>
-                         <button className='border-2 rounded-full w-[30%] py-4 px-4'> <img src="/Images/rating.png" alt="" className='' /> </button>
-                         <p className='mt-8'>2085+</p>
+               <div className='flex flex-col gap-5 lg:gap-0 lg:flex-row'>
+
+                    <div className='flex flex-row lg:flex-col items-center gap-10 lg:gap-0'>
+                         <button className='border-2 rounded-full  w-[15%] lg:w-[30%] p-2 md:p-4'> <img src="/Images/rating.png" alt="" className='w-[100%] h-full lg:w-[200px] lg:g-[40px]' /> </button>
+                         <p className='lg:mt-8'>2085+</p>
                          <p>Happy Customers</p>
                     </div>
-                    <div>
-                         <button className='border-2 rounded-full w-[30%] py-4 px-4'> <img src="/Images/save-water.png" alt="" className='' /> </button>
-                         <p className='mt-8'>526+</p>
+
+                    <div className='flex flex-row lg:flex-col items-center gap-10 lg:gap-0'>
+                         <button className='border-2 rounded-full  w-[15%] lg:w-[30%] p-2 md:p-4'> <img src="/Images/save-water.png" alt="" className='w-[100%] h-full  lg:w-[200px] lg:g-[40px]' /> </button>
+                         <p className='lg:mt-8'>526+</p>
                          <p>Liter Water Saved</p>
                     </div>
-                    <div>
-                         <button className='border-2 rounded-full w-[30%] py-4 px-4'> <img src="/Images/co2.png" alt="" className='' /> </button>
-                         <p className='mt-8'>35000+</p>
+                    
+                    <div className='flex flex-row lg:flex-col items-center gap-10 lg:gap-0'>
+                         <button className='border-2 rounded-full  w-[15%] lg:w-[30%] p-2 md:p-4'> <img src="/Images/co2.png" alt="" className='w-[100%] h-full  lg:w-[200px] lg:g-[40px]' /> </button>
+                         <p className='lg:mt-8'>35000+</p>
                          <p>Kg drop of CO2 Emission</p>
                     </div>
 

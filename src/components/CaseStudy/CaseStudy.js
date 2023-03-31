@@ -11,12 +11,12 @@ export const Images = ({ images }) => {
 
     return (
         <div className="bg-black/[.90] px-[8%]">
-            <div className="py-5 text-white text-center px-[25%] pt-10">
-                <p className="text-[#00ACEF] text-2xl font-semibold">Sun Energie</p>
-                <p className= " text-4xl font-semibold">Case Study</p>
-                <p className="pt-5 text-lg">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+            <div className="py-5 text-white lg:text-center lg:px-[25%] pt-10">
+                <p className="text-[#00ACEF] text-lg lg:text-2xl font-semibold">Sun Energie</p>
+                <p className= " text-2xl lg:text-4xl font-semibold">Case Study</p>
+                <p className="pt-5 text-sm lg:text-lg">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
             </div>
-            <div className="grid grid-cols-3 px-[8%] py-10 gap-5">
+            <div className="grid grid-cols-1 lg:grid-cols-3 space-y-10 lg:space-y-0 lg:px-[8%] py-10 gap-5">
                 {images.map((data1) => (
                     <div>
                         <img src={data1.img} alt="image" className="" />

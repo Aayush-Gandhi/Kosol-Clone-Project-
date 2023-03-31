@@ -11,14 +11,14 @@ const MapSearch = () => {
     const [viewState, setViewState] = React.useState({
         longitude: 72.50291246137696,
         latitude: 23.01991334259394,
-        zoom: 18,
+        zoom: 15,
 
     });
 
     console.log(process.env.REACT_APP_MAPBOX_GL_ACCESS_TOKEN)
 
     return (
-        <div className="" style={{ height: "810px", width: "100%" }}>
+        <div className="h-[550px] lg:h-[810px] w-[100%]">
             <Map
                 {...viewState}
                 onMove={(evt) => setViewState(evt.viewState)}
@@ -73,9 +73,9 @@ const MapSearch = () => {
                 )}
                 <NavigationControl position="bottom-left" />
 
-                <div className="bg-white absolute bottom-[20%] right-[10%] text-lg p-6 w-[30%]">
-                    <p className="w-[70%]">Sun Energie Pvt. Ltd. 744, "Kalthia House", Shivdham Farm, Bh.Karnavati Club, S.G. Highway, Ahmedabad-380015, Gujarat, INDIA.</p>
-                    <p className="w-[70%] mt-5">'Kalthia House', 193,Satyagrah Chhavni, Opp. Iscon Mall, S.G. Highway, Ahmedabad-380015, Gujarat, INDIA.</p>
+                <div className="bg-white absolute bottom-[8%] lg:bottom-[20%] right-[5%] lg:right-[10%] text-xs lg:text-lg p-2 lg:p-6 w-[60%] lg:w-[30%]">
+                    <p className="lg:w-[70%]">Sun Energie Pvt. Ltd. 744, "Kalthia House", Shivdham Farm, Bh.Karnavati Club, S.G. Highway, Ahmedabad-380015, Gujarat, INDIA.</p>
+                    <p className="lg:w-[70%] mt-5">'Kalthia House', 193,Satyagrah Chhavni, Opp. Iscon Mall, S.G. Highway, Ahmedabad-380015, Gujarat, INDIA.</p>
                 </div>
             </Map>
         </div>

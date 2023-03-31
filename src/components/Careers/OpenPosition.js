@@ -62,9 +62,9 @@ export default function OpenPosition() {
     return (
         <div className='bg-black/[.90] px-[8%] pb-20'>
             <div className='md:flex justify-between pt-20'>
-                <div>
+                <div className='text-center'>
                     <p className='text-lg lg:text-2xl font-semibold text-[#00ACEF]'>Sun Energie</p>
-                    <p className='text-2xl lg:text-4xl font-semibold text-white mt-2'>Open Position</p>
+                    <p className='text-2xl lg:text-4xl font-semibold text-white '>Open Position</p>
                 </div>
                 <div>
                     <p className='text-lg text-white/[.80] md:pl-[35%] mt-3 mb-10'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>

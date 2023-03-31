@@ -1,9 +1,80 @@
 import React from 'react'
 import ClientLogo from './ClientLogo'
+import Slider from "react-slick";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Clients() {
 
-     const client = [
+
+     const settings = {
+          infinite: true,
+          speed: 500,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          arrows: false,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          responsive: [
+               {
+                    breakpoint: 767,
+                    settings: {
+                         slidesToShow: 2,
+                         arrows: true,
+                    }
+               },
+               {
+                    breakpoint: 1024,
+                    settings: {
+                         slidesToShow: 3,
+                         arrows: true,
+                    }
+               },
+               {
+                    breakpoint: 1280,
+                    settings: {
+                         slidesToShow: 4,
+                         arrows: true,
+                    }
+               }]
+     };
+     const settings2 = {
+          infinite: true,
+          speed: 500,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          arrows: false,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          rtl: true,
+          responsive: [
+               {
+                    breakpoint: 767,
+                    settings: {
+                         slidesToShow: 2,
+                         arrows: true,
+                    }
+               },
+               {
+                    breakpoint: 1024,
+                    settings: {
+                         slidesToShow: 3,
+                         arrows: true,
+                    }
+               },
+               {
+                    breakpoint: 1280,
+                    settings: {
+                         slidesToShow: 4,
+                         arrows: true,
+                    }
+               }]
+     };
+
+
+
+     const client1 = [
           {
                img: "/Images/LIC.png"
           },
@@ -18,7 +89,10 @@ export default function Clients() {
           },
           {
                img: "/Images/IFFCO.jpg"
-          },
+          }
+     ]
+
+     const client2 = [
           {
                img: "/Images/Taj.png"
           },
@@ -47,26 +121,42 @@ export default function Clients() {
                          <button className='border-2 rounded-md lg:px-8 lg:py-2 text-sm p-2 border-[#00ACEF] text-[#00ACEF] hover:bg-[#00ACEF] hover:text-white'> View all Clients </button>
                     </div>
                </div>
-               
-               <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-5 gap-[50px] mt-5 pb-20">
+
+               {/* <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-5 gap-[50px] mt-5 pb-20"> */}
+
+
+               <div className="space-y-10 py-10 ">
+{/* */}
 
                     {
-                         // client.map((data) => {
-                         //      return (
-                         //           <div>
-                         //                <button className='bg-white p-2 grayscale hover:grayscale-0 border-4 border-transparent hover:scale-110 hover:border-4 hover:border-[#00ACEF] lg:px-10 rounded-md'>
-                         //                     <div>
-                         //                     <img src={data.img} className='h-24 w-36' alt="" /> 
-                         //                     <img src="" alt="" />
-                         //                     </div>
-                         //                </button>
-                         //           </div>
-                         //      )
-                         // }
-                         // )
-                         client.map(({img}, idx) => <ClientLogo key={idx} img={img} /> )
+                         <div className='relative'>
+                              <Slider {...settings}>
+                                   {
+                                        client1.map(({ img }, idx) => <ClientLogo key={idx} img={img} />
+                                        )
+                                   }
+
+                              </Slider>
+                         </div>
                     }
-               </div>    
+
+
+
+                    {
+                         <div className='relative '>
+                              <Slider {...settings2}>
+                                   {
+                                        client2.map(({ img }, idx) => <ClientLogo key={idx} img={img} />
+                                        )
+                                   }
+
+                              </Slider>
+                         </div>
+                    }
+                    {/* client.map(({img}, idx) =><ClientLogo key={idx} img={img} /> ) */}
+
+               </div>
           </div>
+
      )
 }

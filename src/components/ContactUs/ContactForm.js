@@ -1,27 +1,27 @@
 import React from 'react'
-import Form from './Form'
-import { useState } from 'react'
 import TestFrom from './TestFrom'
+import { v4 as uuidv4 } from 'uuid';
+
 export default function ContactForm() {
 
     const contactbtn = [
         {
-            id: crypto.randomUUID(),
+            id: uuidv4(),
             btnname: 'Get In Touch',
             tname: 'Get In Touch With Us.'
         },
         {
-            id: crypto.randomUUID(),
+            id: uuidv4(),
             btnname: 'Customer Support',
             tname: 'Customer Support.'
         },
         {
-            id: crypto.randomUUID(),
+            id: uuidv4(),
             btnname: 'Bussiness Inquiry',
             tname: 'Bussiness Inquiry.'
         },
         {
-            id: crypto.randomUUID(),
+            id: uuidv4(),
             btnname: 'Feed Back',
             tname: 'Feed Back.'
         }
@@ -30,10 +30,10 @@ export default function ContactForm() {
 
     return (
         <div className='px-[8%] py-20 bg-black/[.90]'>
-            <div className='text-center'>
-                <p className='text-xl font-semibold text-[#00ACEF]'>Sun Energie</p>
-                <p className='text-4xl font-semibold text-white mt-5'>Say Hello!</p>
-                <p className='text-lg text-white/[.80] px-[25%] mt-5'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+            <div className='lg:text-center'>
+                <p className='text-lg lg:text-2xl font-semibold text-[#00ACEF]'>Sun Energie</p>
+                <p className='text-2xl lg:text-4xl font-semibold text-white lg:mt-5'>Say Hello!</p>
+                <p className='text-sm lg:text-lg text-white/[.80] lg:px-[25%] mt-5'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
             </div>
 
             {/* <div className='flex text-white justify-evenly text-xl mt-10'>
@@ -46,7 +46,7 @@ export default function ContactForm() {
                 }
             </div> */}
 
-            <div className=' mt-10 pb-[20%]'>
+            <div className=' mt-10'>
                 <TestFrom contactbtn={contactbtn} />
 
                 {/* {

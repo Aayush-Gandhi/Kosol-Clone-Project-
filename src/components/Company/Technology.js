@@ -3,7 +3,7 @@ import React from 'react'
 export default function Technology() {
      return (
           <div className='bg-black/[.89] px-[8%] py-20'>
-               <div className='text-center'>
+               <div className='lg:text-center'>
                     <p className='text-[#00ACEF] text-base lg:text-2xl font-semibold'>Lorem Ipsum is simply dummy text</p>
                     <p className='lg:px-[22%] text-xl lg:text-4xl text-white font-semibold'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. since the 1500s</p>
                     <p className='lg:px-[22%] text-white mt-5 text-sm lg:text-lg font-normal'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
@@ -26,9 +26,9 @@ export default function Technology() {
                          width="100%"
                          height="415"
                          src="https://www.youtube.com/embed/"
-                         frameborder="0"
+                         
                          allow="autoplay; encrypted-media"
-                         allowfullscreen
+                         allowFullScreen
                     />
                </div>
           </div>

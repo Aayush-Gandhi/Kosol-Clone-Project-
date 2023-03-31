@@ -58,7 +58,7 @@ export default function Experience() {
                         yearbtn.map((data, idx) => {
                             return (
 
-                                <Scale data={data} idx={idx} lastIdx={yearbtn.length - 1} />
+                                <Scale data={data} key={idx} idx={idx} lastIdx={yearbtn.length - 1} />
 
                             )
                         })
