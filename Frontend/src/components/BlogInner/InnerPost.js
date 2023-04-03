@@ -25,7 +25,7 @@ export default function InnerPost() {
         for(let i=0;i<productdata.length;i++){
             productList[i] = data[i].product.toLowerCase().replace(" ","") //Solar Pannel => solarpanel
         }
-        console.log(productList)
+        // console.log(productList)
     }
 
     const matchSearch = (val) => {

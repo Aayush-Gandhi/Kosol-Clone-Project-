@@ -38,7 +38,7 @@ export const CaseStudy = () => {
     const pageCount = Math.ceil(data.length / perPage);
     const offset = currentPage * perPage;
     const currentImages = data.slice(offset, offset + perPage);
-    console.log(currentImages)
+    // console.log(currentImages)
     const handlePageClick = ({ selected }) => {
         setCurrentPage(selected);
     };

@@ -1,31 +1,50 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { IoCall, IoLocationSharp, IoMailSharp } from 'react-icons/io5'
+import axios from 'axios'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Form({ data, selectedIndex }) {
+
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [phone, setPhone] = useState("");
+    const [company, setCompany] = useState("");
+    const [comment, setComment] = useState("");
+
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        try {
+            const res = await axios.post(`${process.env.REACT_APP_API}/api/v1/auth/contactus`, { name, email, phone, company, comment })
+            console.log("Success")
+        } catch (error) {
+            console.log("Try again")
+        }
+    }
 
     return (
         selectedIndex === data.id &&
         <div className=' mt-20 w-[100%] lg:flex justify-between  space-y-5 lg:space-y-0'>
             <div className='lg:w-[50%]'>
-                <form action="">
+                <form action="" onSubmit={handleSubmit}>
                     <p className='text-white font-semibold text-2xl'>{data.tname}</p>
                     <p className='text-white text-lg font-medium  pr-[8%] lg:pr-0'>Trust of our customers is our first priority.</p>
 
                     <div className="grid grid-cols-2 w-[100%] gap-5 mt-5 text-white">
                         <div>
-                            <input type="text" placeholder='Your Name' className='border-b-2 bg-transparent px-1 w-full lg:px-3 py-2 font-medium' />
+                            <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder='Your Name' className='border-b-2 bg-transparent px-1 w-full lg:px-3 py-2 font-medium' />
                         </div>
                         <div>
-                            <input type="text" placeholder='Your Email Address' className='border-b-2 bg-transparent px-1 w-full lg:px-3 py-2 font-medium' />
+                            <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Your Email Address' className='border-b-2 bg-transparent px-1 w-full lg:px-3 py-2 font-medium' />
                         </div>
                         <div>
-                            <input type="text" placeholder='Your Phone Number' className='border-b-2 bg-transparent px-1 w-full lg:px-3 py-2 font-medium' />
+                            <input type="text" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder='Your Phone Number' className='border-b-2 bg-transparent px-1 w-full lg:px-3 py-2 font-medium' />
                         </div>
                         <div>
-                            <input type="text" placeholder='Company' className='border-b-2 bg-transparent px-1 lg:px-3 py-2 w-full font-medium' />
+                            <input type="text" value={company} onChange={(e) => setCompany(e.target.value)} placeholder='Company' className='border-b-2 bg-transparent px-1 lg:px-3 py-2 w-full font-medium' />
                         </div>
                         <div className='col-span-2'>
-                            <input type="text" placeholder='Comments' className='border-b-2 bg-transparent px-1 w-full lg:px-3 py-2 font-medium' />
+                            <input type="text" value={comment} onChange={(e) => setComment(e.target.value)} placeholder='Comments' className='border-b-2 bg-transparent px-1 w-full lg:px-3 py-2 font-medium' />
                         </div>
                         <div>
                             <input type="Submit" className='bg-[#00ACEF] rounded text-white px-5 py-2' />
@@ -42,11 +61,11 @@ export default function Form({ data, selectedIndex }) {
                         <p className=' pl-9 mt-3'>Plot No. 127, Jamwadi, G.I.D.C-II,NH 8-B, Gondal, Dist: Rajkot Gujarat INDIA.</p>
                     </div>
                     <div className='flex items-center text-[#00ACEF]'>
-                        <IoCall className='mt-10'/><p className='text-white mt-10 pl-5'> +91 79268 61339</p>
+                        <IoCall className='mt-10' /><p className='text-white mt-10 pl-5'> +91 79268 61339</p>
                     </div>
                     <div>
                         <div className="flex items-center text-[#00ACEF]">
-                            <IoMailSharp className='mt-10'/>  <p className='text-white mt-10 pl-5'>info@kasolray.co.in</p>
+                            <IoMailSharp className='mt-10' />  <p className='text-white mt-10 pl-5'>info@kasolray.co.in</p>
                         </div>
                         <p className='pl-9'>info@kosol.solar</p>
                     </div>

@@ -15,7 +15,6 @@ const MapSearch = () => {
 
     });
 
-    console.log(process.env.REACT_APP_MAPBOX_GL_ACCESS_TOKEN)
 
     return (
         <div className="h-[550px] lg:h-[810px] w-[100%]">

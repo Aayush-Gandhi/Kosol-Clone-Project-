@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Form from './Form'
 
 
-export default function TestFrom({contactbtn }) {
+export default function TestFrom({ contactbtn }) {
 
     const [selectedIndex, setSelectedIndex] = useState(contactbtn[0].id);
 
@@ -10,7 +10,7 @@ export default function TestFrom({contactbtn }) {
         setSelectedIndex(id)
     }
 
-    
+
     return (
         <div>
             <div className='grid grid-cols-2 gap-y-3 lg:space-y-0 md:flex text-white lg:justify-between justify-items-center text-sm lg:text-xl'>
@@ -27,7 +27,7 @@ export default function TestFrom({contactbtn }) {
             <div className=''>
                 {
                     contactbtn.map((data) => {
-                        return(
+                        return (
                             <Form key={data.id} data={data} selectedIndex={selectedIndex} />
                         )
                     })
