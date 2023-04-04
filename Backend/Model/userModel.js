@@ -2,8 +2,9 @@ import mongoose from "mongoose"
 
 
 const userScheme = mongoose.Schema({
-        field_type:{
+        cType:{
             type:String,
+            default:"form"
         },
         name:{
             type:String,
@@ -27,7 +28,7 @@ const userScheme = mongoose.Schema({
             required:true,
         }
 
-    })
+    },{timestamps:true})
 
     export default mongoose.model('contact',userScheme);
 

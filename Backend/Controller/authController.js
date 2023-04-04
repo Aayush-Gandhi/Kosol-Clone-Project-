@@ -3,7 +3,8 @@ import userSchema from "../Model/userModel.js"
 
 export const contactController = async (req,res) =>{
     try {
-        const {name,email,phone,company,comment} = req.body
+        const {cType,name,email,phone,company,comment} = req.body
+        console.log(cType,name,email,phone,company,comment)
         if(!name){
             res.status(404).send({
                 success:false,
@@ -39,7 +40,7 @@ export const contactController = async (req,res) =>{
                 success:true,
                 message:"successfully"
             })
-            const data = userModel.insertMany({name,email,phone,company,comment})
+            const data = await userModel.insertMany({cType,name,email,phone,company,comment})
         }
         
     } catch (error) {

@@ -6,19 +6,30 @@ import 'react-toastify/dist/ReactToastify.css';
 
 export default function Form({ data, selectedIndex }) {
 
+    const cType = data.tname;
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
     const [company, setCompany] = useState("");
     const [comment, setComment] = useState("");
-
+  
     const handleSubmit = async (e) => {
         e.preventDefault()
+   
         try {
-            const res = await axios.post(`${process.env.REACT_APP_API}/api/v1/auth/contactus`, { name, email, phone, company, comment })
+            console.log("before res")
+            const res = await axios.post(`${process.env.REACT_APP_API}/api/v1/auth/contactus`, {cType, name, email, phone, company, comment })
+            setName("")
+            setEmail("")
+            setPhone("")
+            setCompany("")
+            setComment("")
             console.log("Success")
+            console.log(res.data.success)
+            console.log(res.data.message)
         } catch (error) {
             console.log("Try again")
+
         }
     }
 
@@ -27,7 +38,7 @@ export default function Form({ data, selectedIndex }) {
         <div className=' mt-20 w-[100%] lg:flex justify-between  space-y-5 lg:space-y-0'>
             <div className='lg:w-[50%]'>
                 <form action="" onSubmit={handleSubmit}>
-                    <p className='text-white font-semibold text-2xl'>{data.tname}</p>
+                    <p className='contactType text-white font-semibold text-2xl'>{data.tname}</p>
                     <p className='text-white text-lg font-medium  pr-[8%] lg:pr-0'>Trust of our customers is our first priority.</p>
 
                     <div className="grid grid-cols-2 w-[100%] gap-5 mt-5 text-white">
