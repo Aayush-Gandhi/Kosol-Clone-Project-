@@ -27,6 +27,7 @@ export default function Form({ data, selectedIndex }) {
             console.log("Success")
             console.log(res.data.success)
             console.log(res.data.message)
+            
         } catch (error) {
             console.log("Try again")
 
@@ -68,8 +69,8 @@ export default function Form({ data, selectedIndex }) {
                     <div>
                         <div className='flex items-center text-[#00ACEF] gap-5'>
                             <IoLocationSharp /> <p className='text-white'>  Survey No 415, Opp. Super Gas, Village: Bhayla. Tal: Bavla Gujarat, INDIA.</p>
-                        </div>
-                        <p className=' pl-9 mt-3'>Plot No. 127, Jamwadi, G.I.D.C-II,NH 8-B, Gondal, Dist: Rajkot Gujarat INDIA.</p>
+                        </div>    
+                        <p className=' lg:pl-9 mt-3'>Plot No. 127, Jamwadi, G.I.D.C-II,NH 8-B, Gondal, Dist: Rajkot Gujarat INDIA.</p>
                     </div>
                     <div className='flex items-center text-[#00ACEF]'>
                         <IoCall className='mt-10' /><p className='text-white mt-10 pl-5'> +91 79268 61339</p>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { BlogIntro, Footer, Navbar } from '../components'
+import { BlogIntro, Footer, InnerPost, Navbar } from '../components'
 import Content from '../components/BlogInner/Content'
 
 export default function Productinner() {
@@ -7,7 +7,8 @@ export default function Productinner() {
     <div>
         <Navbar />
         <BlogIntro />
-        <Content />
+        <InnerPost />
+        {/* <Content /> */}
         <Footer />
     </div>
   )

@@ -2,32 +2,21 @@ import React, { useEffect, useState } from 'react'
 import { FiUser } from 'react-icons/fi'
 import { SlCalender } from 'react-icons/sl'
 import { useParams } from 'react-router-dom';
-import { contentData, comment } from './ContentData';
+import {  comment } from './ContentData';
 import InnerPost from './InnerPost';
 import Data1 from '../Blogs/Data1'
 
-export default function Content() { 
-    // 
-
-    let { id } = useParams();
-    const [user, setUser] = useState(null);
-
-    const data = contentData;
+export default function Content({data}) {
+    const user = data    
     const cdata = comment;
 
-    useEffect(() => {
-        const newUser = data.filter((user) => user.id == id)
-
-        setUser(newUser[0])
-
-    }, [])
 
     return (
 
         <div>
-            <div className='pt-20 px-[8%] bg-black/[.90] py-10'>
+            <div className='pt-20 py-10'>
                 <div className=' lg:flex'>
-                    <div className='relative border m-5 lg:w-[60%]'>
+                    <div className='relative border m-5 lg:w-[100%]'>
                         <div className="absolute flex items-center gap-3 bg-[#00ACEF] -translate-y-8 translate-x-11 p-5">
                             <SlCalender className='text-xl text-white ' />
                             <p className='text-white text-lg lg:text-xl'>{user?.date}</p>
@@ -66,28 +55,28 @@ export default function Content() {
                             </div>
                         </div>
                     </div>
-                    <div className='lg:w-[35%]'>
+                    {/* <div className='lg:w-[35%]'>
                         <InnerPost />
-                    </div>
+                    </div> */}
                 </div>
 
-                <div className='border lg:w-[60%] m-5 p-5'>
+                <div className='border  m-5 p-5'>
                     <div>
                         <p className='text-white'>Peoples Comment</p>
                     </div>
                     <div className='text-white mt-5 space-y-5'>
                         <div className='flex gap-5'>
-                            <img src={cdata[0].cimg} alt="" className='w-[20%] h-[50px]' />
+                            <img src={cdata[0].cimg} alt="" className='w-[20%] lg:w-[15%]  xl:w-[10%] h-[60px] lg:h-[90px] xl:h-[100px]' />
                             <div>
-                                <p className='text-sm lg:text-lg'>{cdata[0].name}</p>
+                                <p className='text-sm lg:text-lg font-semibold'>{cdata[0].name}</p>
                                 <p className='text-sm lg:text-lg'>{cdata[0].cinfo}</p>
                             </div>
                         </div>
                         <div className='flex gap-5 divide-y-2'>
-                            <img src={cdata[1].cimg} alt="" className='w-[30%] h-[50px] pt-5' />
+                            <img src={cdata[1].cimg} alt="" className='w-[20%] lg:w-[15%]  xl:w-[10%] h-[80px] lg:h-[90px] xl:h-[120px] pt-5' />
                             <div className='pt-5'>
-                                <p>{cdata[1].name}</p>
-                                <p>{cdata[1].cinfo}</p>
+                                <p className='text-sm lg:text-lg font-semibold'>{cdata[1].name}</p>
+                                <p className='text-sm lg:text-lg'>{cdata[1].cinfo}</p>
                             </div>
                         </div>
                     </div>
@@ -95,17 +84,17 @@ export default function Content() {
                 <div className='m-5 space-y-3 mt-20'>
                     <p className='text-white'>Leave A Comment</p>
                     <div className='flex lg:w-[60%] gap-5'>
-                        <input type="text" placeholder='Name'  className='w-1/2 bg-[#252525] p-2'/>
-                        <input type="email" placeholder='Email' className='w-1/2 bg-[#252525] p-2'/>
+                        <input type="text" placeholder='Name' className='w-1/2 bg-[#252525] p-2' />
+                        <input type="email" placeholder='Email' className='w-1/2 bg-[#252525] p-2' />
                     </div>
                     <div className='lg:w-[60%]'>
                         <input type="text" placeholder='Comment' className='w-full bg-[#252525] pb-20 p-2' />
                     </div>
                 </div>
-                <div className='grid grid-cols-1 lg:grid-cols-2'>
-                <Data1 date={data[0].date} author={data[0].author} product={data[0].product} info={data[0].title} img={data[0].img} idpage={1} />
-                <Data1 date={data[1].date} author={data[1].author} product={data[1].product} info={data[1].title} img={data[1].img} idpage={2} />
-                </div>
+                {/* <div className='grid grid-cols-1 lg:grid-cols-2'>
+                    <Data1 date={data[0]?.date} author={data[0]?.author} product={data[0]?.product} info={data[0]?.title} img={data[0]?.img} idpage={1} />
+                    <Data1 date={data[1]?.date} author={data[1]?.author} product={data[1]?.product} info={data[1]?.title} img={data[1]?.img} idpage={2} />
+                </div> */}
             </div>
         </div>
     )

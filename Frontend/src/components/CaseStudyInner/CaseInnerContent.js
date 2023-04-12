@@ -20,17 +20,17 @@ export default function CaseInnerContent() {
   return (
     <div className='bg-black/[.90]'>
       <div className=' px-[8%]'>
-        <div className='flex text-white pt-20'>
-          <div className='w-1/2 my-5'>
+        <div className='lg:flex text-white pt-20'>
+          <div className='lg:w-1/2 lg:my-5'>
             <p className='text-[#00ACEF] text-lg lg:text-2xl'>Sun Energie</p>
             <p className='text-lg lg:text-2xl'>Lorem Ipsum is simply the</p>
           </div>
-          <div className='w-1/2 text-sm lg:text-lg py-5'>
+          <div className='lg:w-1/2 text-sm lg:text-lg py-2 lg:py-5'>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
           </div>
         </div>
-        <div className='max-w-[100%] max-h-[600px] y-10'>
-          <img src={user?.img} alt="" className='h-[600px] w-full bg-cover' />
+        <div className='max-w-[100%] max-h-[400px] lg:max-h-[600px] py-10'>
+          <img src={user?.img} alt="" className='max-h-[600px] lg:h-[600px] w-full bg-cover' />
         </div>
         <div className='lg:flex space-y-5 lg:space-y-0 text-[#00ACEF] justify-around py-10'>
 

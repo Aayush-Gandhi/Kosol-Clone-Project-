@@ -20,7 +20,7 @@ export const Images = ({ images }) => {
                 {images.map((data1) => (
                     <div>
                         <img src={data1.img} alt="image" className="" />
-                        <p className="text-white text-xl py-5">{data1.title}</p>
+                        <p className="text-white text-sm lg:text-xl py-5">{data1.title}</p>
                         <a href="" className="text-[#00ACEF] font-semibold text-lg" onClick={() => navigate(`/Casestudy/Casestudyinner/${data1.id}`)}> Read More </a>
 
                     </div>
