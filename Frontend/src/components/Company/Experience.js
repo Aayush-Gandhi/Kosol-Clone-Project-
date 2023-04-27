@@ -8,42 +8,42 @@ export default function Experience() {
         {
             year: '1960',
             title: 'Market Hit',
-            info: 'Solar Water Heater (SWH) under the brand name kasolRay, our first product, hit the market with support of CREDA and later with MNRE in 80s and 90s.'
+            info: 'Solar Water Heater (SWH) under the brand name SunEnergie, our first product, hit the market with support of CREDA and later with MNRE in 80s and 90s.'
         },
         {
             year: '1970',
             title: 'Market Hit',
-            info: 'Solar Water Heater (SWH) under the brand name kasolRay, our first product, hit the market with support of CREDA and later with MNRE in 80s and 90s.'
+            info: 'Solar Water Heater (SWH) under the brand name SunEnergie, our first product, hit the market with support of CREDA and later with MNRE in 80s and 90s.'
         },
         {
             year: '1980',
             title: 'Market Hit',
-            info: 'Solar Water Heater (SWH) under the brand name kasolRay, our first product, hit the market with support of CREDA and later with MNRE in 80s and 90s.'
+            info: 'Solar Water Heater (SWH) under the brand name SunEnergie, our first product, hit the market with support of CREDA and later with MNRE in 80s and 90s.'
         },
         {
             year: '1990',
             title: 'Market Hit',
-            info: 'Solar Water Heater (SWH) under the brand name kasolRay, our first product, hit the market with support of CREDA and later with MNRE in 80s and 90s.'
+            info: 'Solar Water Heater (SWH) under the brand name SunEnergie, our first product, hit the market with support of CREDA and later with MNRE in 80s and 90s.'
         },
         {
             year: '2000',
             title: 'Market Hit',
-            info: 'Solar Water Heater (SWH) under the brand name kasolRay, our first product, hit the market with support of CREDA and later with MNRE in 80s and 90s.'
+            info: 'Solar Water Heater (SWH) under the brand name SunEnergie, our first product, hit the market with support of CREDA and later with MNRE in 80s and 90s.'
         },
         {
             year: '2010',
             title: 'Market Hit',
-            info: 'Solar Water Heater (SWH) under the brand name kasolRay, our first product, hit the market with support of CREDA and later with MNRE in 80s and 90s.'
+            info: 'Solar Water Heater (SWH) under the brand name SunEnergie, our first product, hit the market with support of CREDA and later with MNRE in 80s and 90s.'
         },
         {
             year: '2020',
             title: 'Market Hit',
-            info: 'Solar Water Heater (SWH) under the brand name kasolRay, our first product, hit the market with support of CREDA and later with MNRE in 80s and 90s.'
+            info: 'Solar Water Heater (SWH) under the brand name SunEnergie, our first product, hit the market with support of CREDA and later with MNRE in 80s and 90s.'
         },
         {
             year: '2021',
             title: 'Market Hit',
-            info: 'Solar Water Heater (SWH) under the brand name kasolRay, our first product, hit the market with support of CREDA and later with MNRE in 80s and 90s.'
+            info: 'Solar Water Heater (SWH) under the brand name SunEnergie, our first product, hit the market with support of CREDA and later with MNRE in 80s and 90s.'
         }
 
     ]

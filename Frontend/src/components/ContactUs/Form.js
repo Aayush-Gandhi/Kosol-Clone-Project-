@@ -77,7 +77,7 @@ export default function Form({ data, selectedIndex }) {
                     </div>
                     <div>
                         <div className="flex items-center text-[#00ACEF]">
-                            <IoMailSharp className='mt-10' />  <p className='text-white mt-10 pl-5'>info@kasolray.co.in</p>
+                            <IoMailSharp className='mt-10' />  <p className='text-white mt-10 pl-5'>info@sunenergie.co.in</p>
                         </div>
                         <p className='pl-9'>info@kosol.solar</p>
                     </div>

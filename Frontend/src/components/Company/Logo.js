@@ -55,14 +55,14 @@ export default function Logo() {
             {/* className="grid grid-cols-2 lg:grid-cols-5 mt-5 gap-[50px] pb-20"  */}
 
                 {
-                    <div className='relative'>
+                    <div className='relative h-40 m-auto'>
                         <Slider {...settings}>
                             {
                                 logos.map((data, index) => {
                                     return (
-                                        <div className='relative  ' key={index}>
-                                            <button className='bg-white p-2  lg:absolute grayscale hover:grayscale-0 hover:scale-75 hover:border-4 border-[#00ACEF] px-10 rounded-md'>
-                                                <img src={data.img} className='h-24 w-20 lg:36' alt="" />
+                                        <div className='relative box-border h-max' key={index}>
+                                            <button className='bg-white  p-2 grayscale hover:grayscale-0 hover:scale-90 hover:border-4 border-[#00ACEF] px-10 rounded-md '>
+                                                <img src={data.img} className='h-24 w-20 lg:h-32' alt="" />
                                             </button>
                                         </div>
                                     )

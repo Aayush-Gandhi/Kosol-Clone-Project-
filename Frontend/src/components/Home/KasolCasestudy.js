@@ -19,7 +19,7 @@ export default function KasolCasestudy() {
      return (
           <div className='bg-black/[.90] px-[8%] pt-20 pb-20'>
                <div>
-                    <p className='text-sm lg:text-2xl font-semibold text-[#00ACEF]'>kasol Enerigie</p>
+                    <p className='text-sm lg:text-2xl font-semibold text-[#00ACEF]'>Sun Enerigie</p>
                     <p className='text-base lg:text-4xl font-semibold text-white'>Case Study</p>
                </div>
                <div className="lg:flex mt-10">

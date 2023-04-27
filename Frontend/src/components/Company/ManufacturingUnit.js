@@ -16,7 +16,7 @@ export default function ManufacturingUnit() {
                             </p>
 
                             <li className="text-2xl font-semibold mt-10">Quality & Assurance</li>
-                            <p className="text-lg font-normal mt-5">We don't trust any part of the solar manufacturing process to anyone else. We strictly control the creation of every kasolRay product from beginning to end. We manufacture and produce every cell and assemble every panel in our state-of-the-art facility.
+                            <p className="text-lg font-normal mt-5">We don't trust any part of the solar manufacturing process to anyone else. We strictly control the creation of every SunEnergie product from beginning to end. We manufacture and produce every cell and assemble every panel in our state-of-the-art facility.
                             </p>
                         </ul>
                     </div>

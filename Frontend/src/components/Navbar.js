@@ -49,7 +49,7 @@ export default function Navbar(props) {
                               <MdOutlineMail />
                          </p>
                          <a href='' className='ml-3 text-xs'>
-                              info@kasolray.co.in
+                              info@sunenergie.co.in
                          </a>
                     </div>
                     <div className='hidden md:text-white md:flex md:space-x-8 md:mr-[8%]'>
@@ -99,9 +99,9 @@ export default function Navbar(props) {
 
                     {
                          open ?
-                              <div className="btn block lg:hidden text-white">
+                              <div className="btn block lg:hidden text-[red]">
                                    <button onClick={handleOpen} className='py-3 px-3 bg'><FaBars /></button>
-                              </div> : <div className="btn block lg:hidden text-white">
+                              </div> : <div className="btn block lg:hidden text-[green]">
                                    <button onClick={handleOpen} className='py-3 px-3 '><FaTimes /></button>
                               </div>
                     }
