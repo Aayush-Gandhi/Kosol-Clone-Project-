@@ -15,9 +15,9 @@ export default function HomeMain() {
                               {/* <Breadcrumbs /> */}
                          </div>
                          <div className='hidden lg:flex flex-col items-end text-white space-y-2 overflow-hidden'>
-                              <button className='bg-black px-2 py-2 gap-2 items-center rounded text-xs xl:text-xl flex hover:-translate-x-0 duration-700 translate-x-[80%] '><IoCalculatorOutline /> SolarCalculator </button>
-                              <button className='bg-black px-3 py-2 gap-2 rounded flex w-fit hover:-translate-x-0 duration-700 translate-x-[80%] text-xs xl:text-base'> <IoLogoWhatsapp /> +91 9988776655 </button>
-                              <button className='bg-black px-3 py-2 gap-2 rounded flex w-fit hover:-translate-x-0 duration-700 translate-x-[80%] text-xs xl:text-base'> <IoCallSharp /> +91 9988776655 </button>
+                              <a className='bg-black px-2 py-2 gap-2 items-center rounded text-xs xl:text-xl flex hover:-translate-x-0 duration-700 translate-x-[80%]' href='https://kosolenergie.com/calculator/solar-calculator'><IoCalculatorOutline /> SolarCalculator </a>
+                              <a className='bg-black px-3 py-2 gap-2 rounded flex w-fit hover:-translate-x-0 duration-700 translate-x-[80%] text-xs xl:text-base'> <IoLogoWhatsapp /> +91 9988776655 </a>
+                              <a className='bg-black px-3 py-2 gap-2 rounded flex w-fit hover:-translate-x-0 duration-700 translate-x-[80%] text-xs xl:text-base'> <IoCallSharp /> +91 9988776655 </a>
                          </div>
                     </div>
                </div>

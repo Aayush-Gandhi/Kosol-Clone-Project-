@@ -43,7 +43,7 @@ export default function Navbar(props) {
                               <IoCallSharp />
                          </p>
                          <p className='ml-3 text-xs'>
-                              Call us: 99252 99250
+                              Call us: 99887 76655
                          </p>
                          <p className='ml-5 pt-1'>
                               <MdOutlineMail />
@@ -78,6 +78,8 @@ export default function Navbar(props) {
                                         <li><a href="" onClick={() => Navigate('/Casestudy')}> Case Study </a></li>
                                         <button className='border-2 rounded-md px-4 py-2 border-[#00ACEF] text-[#00ACEF] hover:bg-[#00ACEF] hover:text-white'
                                              onClick={() => Navigate('/Contactus')}> Contactus </button>
+                                        {/* <button className='border-2 rounded-md px-4 py-2 border-[#00ACEF] text-[#00ACEF] hover:bg-[#00ACEF] hover:text-white' */}
+                                             {/* onClick={() => Navigate('/Contactus')}> Admin </button> */}
                                    </ul>
                               </div>
                               :
@@ -93,10 +95,9 @@ export default function Navbar(props) {
                                         <li className='menu_items' onClick={() => Navigate('/Blog')}><a href="" > Blog </a></li>
                                         <li className='menu_items' onClick={() => Navigate('/Casestudy')}><a href="" > Case Study </a></li>
                                         <button className='border-2 rounded-md ml-3 px-3 lg:px-8 py-2 border-blue-400 text-blue-400 text-sm' onClick={() => Navigate('/Contactus')} > Contact us </button>
+                                        {/* <button className='border-2 rounded-md ml-3 px-3 lg:px-8 py-2 border-blue-400 text-blue-400 text-sm' onClick={() => Navigate('/Contactus')} > Admin </button> */}
                                    </ul>
                               </div>}
-
-
                     {
                          open ?
                               <div className="btn block lg:hidden text-[red]">

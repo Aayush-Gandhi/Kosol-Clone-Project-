@@ -1,6 +1,5 @@
 import mongoose from "mongoose"
 
-
 const userScheme = mongoose.Schema({
         cType:{
             type:String,

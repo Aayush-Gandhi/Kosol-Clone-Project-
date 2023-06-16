@@ -11,7 +11,7 @@ export default function News_Blogs({ id }) {
     <div className='bg-black/[.90] px-[8%]'>
       <div className='md:text-center pt-10'>
         <p className='text-lg lg:text-2xl font-semibold text-[#00ACEF]'>Sun Energie</p>
-        <p className='text-2xl lg:text-4xl font-semibold text-white md:mt-2'>Photo Gallery</p>
+        <p className='text-2xl lg:text-4xl font-semibold text-white md:mt-2'>Blogs</p>
         <p className='text-sm lg:text-lg text-white/[.80] md:px-[10%] mt-3'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
       </div>
 

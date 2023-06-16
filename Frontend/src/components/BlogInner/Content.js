@@ -81,7 +81,7 @@ export default function Content({data}) {
                         </div>
                     </div>
                 </div>
-                <div className='m-5 space-y-3 mt-20'>
+                {/* <div className='m-5 space-y-3 mt-20'>
                     <p className='text-white'>Leave A Comment</p>
                     <div className='flex lg:w-[60%] gap-5'>
                         <input type="text" placeholder='Name' className='w-1/2 bg-[#252525] p-2' />
@@ -90,7 +90,7 @@ export default function Content({data}) {
                     <div className='lg:w-[60%]'>
                         <input type="text" placeholder='Comment' className='w-full bg-[#252525] pb-20 p-2' />
                     </div>
-                </div>
+                </div> */}
                 {/* <div className='grid grid-cols-1 lg:grid-cols-2'>
                     <Data1 date={data[0]?.date} author={data[0]?.author} product={data[0]?.product} info={data[0]?.title} img={data[0]?.img} idpage={1} />
                     <Data1 date={data[1]?.date} author={data[1]?.author} product={data[1]?.product} info={data[1]?.title} img={data[1]?.img} idpage={2} />
