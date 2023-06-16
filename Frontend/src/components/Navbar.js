@@ -97,6 +97,7 @@ export default function Navbar(props) {
                                         <button className='border-2 rounded-md ml-3 px-3 lg:px-8 py-2 border-blue-400 text-blue-400 text-sm' onClick={() => Navigate('/Contactus')} > Contact us </button>
                                         {/* <button className='border-2 rounded-md ml-3 px-3 lg:px-8 py-2 border-blue-400 text-blue-400 text-sm' onClick={() => Navigate('/Contactus')} > Admin </button> */}
                                    </ul>
+                                   
                               </div>}
                     {
                          open ?
