@@ -8,6 +8,7 @@ body {
   transform: scale(0.75);
   transform-origin: top left;
   width: 133.33%; /* (1 / 0.75) = 1.3333 */
+  margin-bottom: -316% !important;
 }
 
 code {
