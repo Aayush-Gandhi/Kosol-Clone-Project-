@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transform: scale(0.75);
+  transform-origin: top left;
+  width: 133.33%; /* (1 / 0.75) = 1.3333 */
 }
 
 code {
