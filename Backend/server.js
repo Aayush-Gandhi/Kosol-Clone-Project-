@@ -12,7 +12,9 @@ connectDB();
 const app = express()
 app.use(express.json())
 app.use(cors({
-    origin: ['http://localhost:3000']
+    origin: 'http://localhost:3000',
+    methods: '*',
+    optionsSuccessStatus: 200
 }))
 app.use("/api/v1/auth",authRoutes)
 app.use(morgan("dev"))
